@@ -1,0 +1,7 @@
+# This file prevents CLion's and other IDEs shit most of you don't need from
+# clogging your hard drive.
+
+# BCI_SamplingTest project.
+BCI_SamplingTest/cmake-build-debug/** 
+BCI_SamplingTest/cmake-build-debug-raspberry-pi/**
+BCI_SamplingTest/cmake-build-debug-release-raspberry-pi/**
