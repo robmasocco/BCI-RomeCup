@@ -1,3 +1,0 @@
-/home/lhrobs/CLionProjects/BCI_SamplingTest/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/lhrobs/CLionProjects/BCI_SamplingTest/cmake-build-debug/CMakeFiles/BCI_SamplingTest.dir
-/home/lhrobs/CLionProjects/BCI_SamplingTest/cmake-build-debug/CMakeFiles/edit_cache.dir
