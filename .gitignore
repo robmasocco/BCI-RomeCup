@@ -5,4 +5,4 @@
 BCI_SamplingTest/cmake-build-debug/** 
 BCI_SamplingTest/cmake-build-debug-raspberry-pi/**
 BCI_SamplingTest/cmake-build-debug-release-raspberry-pi/**
-BCI_SamplingTest/.idea
+BCI_SamplingTest/.idea/**

@@ -12,7 +12,36 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21e37514-058c-4941-a0ed-8c37352f786d" name="Default Changelist" comment="" />
+    <list default="true" id="21e37514-058c-4941-a0ed-8c37352f786d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/BCI_SamplingTest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/BCI_SamplingTest.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/BCI_SamplingTest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/BCI_SamplingTest.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/printer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/sampler.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/clion-log.txt" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release-raspberry-pi/" />
@@ -57,7 +86,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BitConversion.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="720">
+                <state relative-caret-position="828">
                   <caret line="36" selection-start-line="36" selection-end-line="36" />
                 </state>
               </provider>
@@ -135,10 +164,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1080" />
-    <option name="y" value="164" />
-    <option name="width" value="1920" />
-    <option name="height" value="1050" />
+    <option name="x" value="-2" />
+    <option name="y" value="-8" />
+    <option name="width" value="1924" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -147,25 +176,7 @@
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="BCI_SamplingTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BCI_SamplingTest" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="BCI_SamplingTest" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BCI_SamplingTest" type="462c0819:PsiDirectoryNode" />
-              <item name="cmake-build-release-raspberry-pi" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -206,17 +217,19 @@
       <workItem from="1552594470922" duration="31000" />
       <workItem from="1552594522359" duration="13506000" />
       <workItem from="1553379024539" duration="634000" />
+      <workItem from="1553381461899" duration="40000" />
+      <workItem from="1553381832584" duration="33000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14171000" />
+    <option name="totallyTimeSpent" value="14244000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1080" y="164" width="1920" height="1051" extended-state="6" />
+    <frame x="-2" y="-8" width="1924" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.25266525" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.25213677" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -230,8 +243,8 @@
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49946696" weight="0.32975295" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50053304" side_tool="true" weight="0.32975295" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32795697" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32903227" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32683983" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -248,6 +261,9 @@
           <caret line="1360" column="22" selection-start-line="1360" selection-start-column="22" selection-end-line="1360" selection-end-column="22" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
@@ -269,8 +285,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BitConversion.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
+        <state relative-caret-position="828">
           <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SPI_Definitions.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCI_SamplingTest.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fftWorker.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -283,21 +314,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fftWorker.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SPI_Definitions.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BCI_SamplingTest.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/sampler.c">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -306,9 +322,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
