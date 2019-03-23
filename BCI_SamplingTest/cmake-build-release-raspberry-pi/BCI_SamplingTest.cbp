@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="BCI_SamplingTest"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BCI_SamplingTest">
+				<Option output="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/BCI_SamplingTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lhrobs/raspberrypi/rootfs/usr/local/include"/>
+					<Add directory="/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/../lib/gcc/arm-linux-gnueabihf/4.8.3/include"/>
+					<Add directory="/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/../lib/gcc/arm-linux-gnueabihf/4.8.3/include-fixed"/>
+					<Add directory="/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/../lib/gcc/arm-linux-gnueabihf/4.8.3/../../../../arm-linux-gnueabihf/include"/>
+					<Add directory="/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/../arm-linux-gnueabihf/libc/usr/include/."/>
+					<Add directory="/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/../arm-linux-gnueabihf/libc/usr/include/arm-linux-gnueabihf"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 BCI_SamplingTest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="BCI_SamplingTest/fast">
+				<Option output="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/BCI_SamplingTest" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/lhrobs/raspberrypi/rootfs/usr/local/include"/>
+					<Add directory="/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/../lib/gcc/arm-linux-gnueabihf/4.8.3/include"/>
+					<Add directory="/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/../lib/gcc/arm-linux-gnueabihf/4.8.3/include-fixed"/>
+					<Add directory="/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/../lib/gcc/arm-linux-gnueabihf/4.8.3/../../../../arm-linux-gnueabihf/include"/>
+					<Add directory="/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/../arm-linux-gnueabihf/libc/usr/include/."/>
+					<Add directory="/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/../arm-linux-gnueabihf/libc/usr/include/arm-linux-gnueabihf"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 BCI_SamplingTest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/BCI_SamplingTest.h">
+			<Option target="BCI_SamplingTest"/>
+		</Unit>
+		<Unit filename="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/BitConversion.c">
+			<Option target="BCI_SamplingTest"/>
+		</Unit>
+		<Unit filename="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/SPI_Definitions.h">
+			<Option target="BCI_SamplingTest"/>
+		</Unit>
+		<Unit filename="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/boardInitializer.c">
+			<Option target="BCI_SamplingTest"/>
+		</Unit>
+		<Unit filename="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/fftWorker.c">
+			<Option target="BCI_SamplingTest"/>
+		</Unit>
+		<Unit filename="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/main.c">
+			<Option target="BCI_SamplingTest"/>
+		</Unit>
+		<Unit filename="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/printer.c">
+			<Option target="BCI_SamplingTest"/>
+		</Unit>
+		<Unit filename="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/sampler.c">
+			<Option target="BCI_SamplingTest"/>
+		</Unit>
+		<Unit filename="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
