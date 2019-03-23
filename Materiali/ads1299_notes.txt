@@ -1,0 +1,99 @@
+	NOTE GENERALI
+Trasmissione dati MSB.
+SPI mode 1.
+SCLK governato dal master: RPi deve mandare un clock a 12.5 MHz
+(usare divisore BCM2835_SPI_CLOCK_DIVIDER_32 su RPi 3) oppure a 1.56 MHz per
+le impostazioni iniziali (divisore BCM2835_SPI_CLOCK_DIVIDER_256).
+DIN deve rimanere LOW durante l'intera lettura.
+Vengono mandati in output 216 bit, divisi in 24 bit di stato + 24*8 bit dei
+canali.
+I bit di stato sono:
+1100+LOFF_STATP+LOFF_STATN+GPIO[4:7]
+e non dovrebbero servire.
+Ogni canale, che sia disattivato o meno, viene poi trasmesso con 24 bit MSB in
+complemento a due.
+DIN -> MOSI
+DOUT -> MISO
+Tenere START basso per controllare le conversioni usando i comandi SPI.
+Se necessario fare altre configurazioni preliminari allo startup, avviare una
+conversazione SPI con SCLK=1.56 MHz, poi chiuderla e riaprirla a 12.5 MHz per il
+campionamento. Usare CSB per aprire/chiudere. Il problema sono i comandi
+multi-byte per leggere/scrivere i registri.
+Basandosi su un oscillatore esterno, si assume fclk = 2.048 MHz.
+
+    USO ELETTRODI
+NOTAZIONE TRA I DATASHEET E NOI:
+	BIAS = referenza
+	REFERENCE = terra
+Modo unipolare (J6): l'elettrodo si collega al pin + di ciascun canale.
+Scollegare tutti i ponticelli orizzontali!
+Canali 1 e 2: elettrodi O1 e O2.
+Patient BIAS e Reference (JP25): Si tratta dei segnali di referenza e terra
+dell'utente. Scollegare tutti i ponticelli orizzontali!
+Collegare elettrodo di terra a JP25-6.
+Collegare elettrodo di referenza (BIAS) a JP25-4.
+
+	PIN DA CABLARE
+START
+DRDY
+CLKSEL
+RESET
+CSB
+SCLK
+DIN
+DOUT
+
+	CONFIGURAZIONE ALLO STARTUP
+Mettere START LOW.
+Mettere RESET HIGH.
+Mettere CLKSEL LOW.
+Attendere 5 ms.
+Mettere RESET LOW.
+Attendere 1 ms.
+Mettere RESET HIGH.
+Attendere 5 ms.
+Avviare SPI a 1.56 MHz.
+Mettere CSB LOW.
+Inviare comando SDATAC per interrompere conversioni continue.
+Attendere 1 ms.
+Impostare VRef interna scrivendo CONFIG3[7]=1.
+Attendere 5 ms.
+Impostare frequenza di campionamento scrivendo CONFIG1[2:0] (vedi pag. 46).
+CONFIGURARE BIAS SIGNAL IN CONFIG3:
+    Usare valor medio della tensione analogica come negativo per la misurazione
+    del BIAS scrivendo CONFIG3[3]=1.
+CONFIGURARE ELETTRODO DI TERRA (REFERENCE):
+	Per usarlo come negativo per ogni canale, scrivere MISC1[5]=1.
+IMPOSTARE INPUT: PER n=1:2 (campionatori)
+	CHnSET[7]=0 (normal operation).
+	CHnSET[2:0]=000 (normal electrode input).
+IMPOSTARE INPUT DISATTIVATE: PER n=3:8
+	CHnSET[7]=1 (channel power down).
+Impostare campionamento su richiesta scrivendo CONFIG4[3]=1.
+Mettere CSB HIGH.
+Chiudere SPI a 1.56 MHz.
+Aprire SPI a 12.5 MHz.
+Mettere CSB LOW.
+
+	PROCEDURA DI ACQUISIZIONE
+Mettere START HIGH.
+Escludere i primi due campioni facendo polling dei fronti di salita e discesa,
+dato che saranno temporizzati male.
+DRDYB passa a HIGH e poi a LOW. Al fronte di discesa i dati sono pronti
+(DRDYB resterà basso).
+Leggere inviando nel buffer il comando RDATA.
+Continuare a rotazione rilevando i fronti, tenendo START alto.
+
+	PAGINE UTILI DATASHEETS
+Pag. 34: Avvio scheda.
+
+Pag. 35, Fig. 41: Relazione tra segnali di controllo dati e linee SPI.
+
+Pag. 38: Descrizione interfaccia SPI.
+
+Pag. 40: Tabella comandi SPI.
+
+Pag. 44: Mappa registri.
+
+Pag. 51 (PDK): Schema circuitale jumper elettrodi.
+

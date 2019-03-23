@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/BCI_SamplingTest.dir/main.c.o  -o BCI_SamplingTest 
