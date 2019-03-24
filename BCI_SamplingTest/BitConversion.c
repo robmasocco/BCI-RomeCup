@@ -1,5 +1,6 @@
 /* Converts a string of bits in CP2 in a 32 bit integer considering ENOB,
-   Effective Number Of Bits. */
+ * Effective Number Of Bits.
+ */
 double convertBit(const unsigned char *bytes, int nByte, int enob, int invert) {
     int number = 0;
     int power = 1;
@@ -41,7 +42,7 @@ double convertBit(const unsigned char *bytes, int nByte, int enob, int invert) {
     }
 
     // Bits in the enob, excluding the last one
-    while (bit < finalBit){
+    while (bit < finalBit) {
         number += ((*(bytes + byte) >> (bit % 8)) & 1) * power;
         power = 2 * power;
 
