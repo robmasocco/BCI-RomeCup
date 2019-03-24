@@ -1,4 +1,4 @@
-/home/lhrobs/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 -DCMAKE_CXX_COMPILER=/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-g++ -G "CodeBlocks - Unix Makefiles" /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest
+/home/lhrobs/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/183.5429.37/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_C_COMPILER=/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc -DCMAKE_CXX_COMPILER=/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-g++ -G "CodeBlocks - Unix Makefiles" /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi

@@ -177,6 +177,33 @@ boardInitializer.c.s:
 	$(MAKE) -f CMakeFiles/BCI_NeuroRace.dir/build.make CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.s
 .PHONY : boardInitializer.c.s
 
+calibration.o: calibration.c.o
+
+.PHONY : calibration.o
+
+# target to build an object file
+calibration.c.o:
+	$(MAKE) -f CMakeFiles/BCI_NeuroRace.dir/build.make CMakeFiles/BCI_NeuroRace.dir/calibration.c.o
+.PHONY : calibration.c.o
+
+calibration.i: calibration.c.i
+
+.PHONY : calibration.i
+
+# target to preprocess a source file
+calibration.c.i:
+	$(MAKE) -f CMakeFiles/BCI_NeuroRace.dir/build.make CMakeFiles/BCI_NeuroRace.dir/calibration.c.i
+.PHONY : calibration.c.i
+
+calibration.s: calibration.c.s
+
+.PHONY : calibration.s
+
+# target to generate assembly for a file
+calibration.c.s:
+	$(MAKE) -f CMakeFiles/BCI_NeuroRace.dir/build.make CMakeFiles/BCI_NeuroRace.dir/calibration.c.s
+.PHONY : calibration.c.s
+
 calibrator.o: calibrator.c.o
 
 .PHONY : calibrator.o
@@ -203,6 +230,33 @@ calibrator.s: calibrator.c.s
 calibrator.c.s:
 	$(MAKE) -f CMakeFiles/BCI_NeuroRace.dir/build.make CMakeFiles/BCI_NeuroRace.dir/calibrator.c.s
 .PHONY : calibrator.c.s
+
+control.o: control.c.o
+
+.PHONY : control.o
+
+# target to build an object file
+control.c.o:
+	$(MAKE) -f CMakeFiles/BCI_NeuroRace.dir/build.make CMakeFiles/BCI_NeuroRace.dir/control.c.o
+.PHONY : control.c.o
+
+control.i: control.c.i
+
+.PHONY : control.i
+
+# target to preprocess a source file
+control.c.i:
+	$(MAKE) -f CMakeFiles/BCI_NeuroRace.dir/build.make CMakeFiles/BCI_NeuroRace.dir/control.c.i
+.PHONY : control.c.i
+
+control.s: control.c.s
+
+.PHONY : control.s
+
+# target to generate assembly for a file
+control.c.s:
+	$(MAKE) -f CMakeFiles/BCI_NeuroRace.dir/build.make CMakeFiles/BCI_NeuroRace.dir/control.c.s
+.PHONY : control.c.s
 
 controller.o: controller.c.o
 
@@ -381,9 +435,15 @@ help:
 	@echo "... boardInitializer.o"
 	@echo "... boardInitializer.i"
 	@echo "... boardInitializer.s"
+	@echo "... calibration.o"
+	@echo "... calibration.i"
+	@echo "... calibration.s"
 	@echo "... calibrator.o"
 	@echo "... calibrator.i"
 	@echo "... calibrator.s"
+	@echo "... control.o"
+	@echo "... control.i"
+	@echo "... control.s"
 	@echo "... controller.o"
 	@echo "... controller.i"
 	@echo "... controller.s"

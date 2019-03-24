@@ -15,6 +15,7 @@ link_directories(/home/lhrobs/raspberrypi/rootfs/usr/local/lib)
 
 add_executable(BCI_NeuroRace main.c BCI_NeuroRace.h CommProtocol.h filtering.c
         boardInitializer.c BitConversion.c SPI_Definitions.h calibrator.c
-        sampler.c fftWorker.c controller.c signalHandlers.c)
+        sampler.c fftWorker.c controller.c signalHandlers.c calibration.c
+        control.c)
 target_link_libraries(BCI_NeuroRace pthread bcm2835 fftw3 m)
 target_compile_definitions(BCI_NeuroRace PUBLIC BANDPASS)

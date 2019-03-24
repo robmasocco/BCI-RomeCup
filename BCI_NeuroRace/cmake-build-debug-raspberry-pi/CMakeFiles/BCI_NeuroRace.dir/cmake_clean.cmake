@@ -8,6 +8,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.o"
   "CMakeFiles/BCI_NeuroRace.dir/controller.c.o"
   "CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.o"
+  "CMakeFiles/BCI_NeuroRace.dir/calibration.c.o"
+  "CMakeFiles/BCI_NeuroRace.dir/control.c.o"
   "BCI_NeuroRace.pdb"
   "BCI_NeuroRace"
 )

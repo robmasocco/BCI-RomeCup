@@ -11,20 +11,20 @@
 				<Option working_dir="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
 				<Option working_dir="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="BCI_NeuroRace">
@@ -43,10 +43,10 @@
 					<Add directory="/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/../arm-linux-gnueabihf/libc/usr/include/arm-linux-gnueabihf"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 BCI_NeuroRace"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 BCI_NeuroRace"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="BCI_NeuroRace/fast">
@@ -65,20 +65,20 @@
 					<Add directory="/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/../arm-linux-gnueabihf/libc/usr/include/arm-linux-gnueabihf"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 BCI_NeuroRace/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 BCI_NeuroRace/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
 				<Option working_dir="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
@@ -97,7 +97,13 @@
 		<Unit filename="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/boardInitializer.c">
 			<Option target="BCI_NeuroRace"/>
 		</Unit>
+		<Unit filename="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibration.c">
+			<Option target="BCI_NeuroRace"/>
+		</Unit>
 		<Unit filename="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibrator.c">
+			<Option target="BCI_NeuroRace"/>
+		</Unit>
+		<Unit filename="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/control.c">
 			<Option target="BCI_NeuroRace"/>
 		</Unit>
 		<Unit filename="/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/controller.c">

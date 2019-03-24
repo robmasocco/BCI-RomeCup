@@ -13,53 +13,67 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ed808d6-aa0b-4aa2-8261-bc6122a9e6b6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/BCI_NeuroRace.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/BCI_NeuroRace.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/BCI_NeuroRace.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/BCI_NeuroRace.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/Makefile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/BCI_SamplingTest.h" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/BCI_SamplingTest.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/BitConversion.c" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/BitConversion.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/boardInitializer.c" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/boardInitializer.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/BCI_SamplingTest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/BCI_SamplingTest.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/DependInfo.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/cmake_clean.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/progress.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/clion-environment.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-debug-raspberry-pi/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/BCI_SamplingTest" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/BCI_SamplingTest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/BCI_SamplingTest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/BCI_SamplingTest.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/C.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/C.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/depend.internal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/filtering.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/main.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/main.c.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/sampler.c.o" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/sampler.c.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/printer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/sampler.c.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/Makefile2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/clion-environment.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/cmake-build-release-raspberry-pi/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/fftWorker.c" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/fftWorker.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/filters.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/filters.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/sampler.c" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/sampler.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Materiali/ads1299_notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Materiali/ads1299_notes.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/" />
@@ -74,10 +88,14 @@
   <component name="FileEditorManager">
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-              <provider selected="true" editor-type-id="text-editor" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="414">
+                  <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+                </state>
+              </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
@@ -112,20 +130,14 @@
           </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/boardInitializer.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <folding>
-                    <element signature="e#0#18#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="280">
-                  <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+                <state relative-caret-position="460">
+                  <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -133,7 +145,7 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BCI_NeuroRace.h">
               <provider selected="true" editor-type-id="text-editor" />
@@ -149,15 +161,19 @@
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controller.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <folding>
-                    <element signature="e#1#24#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/calibration.c">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/control.c">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
@@ -188,17 +204,17 @@
         <option value="$PROJECT_DIR$/filtering.c" />
         <option value="$PROJECT_DIR$/boardInitializer.c" />
         <option value="$PROJECT_DIR$/sampler.c" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/controller.c" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1080" />
-    <option name="y" value="164" />
-    <option name="width" value="1920" />
-    <option name="height" value="1051" />
+    <option name="x" value="-2" />
+    <option name="y" value="-8" />
+    <option name="width" value="1924" />
+    <option name="height" value="1054" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -208,7 +224,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -220,10 +235,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="CMakeSettings" />
@@ -258,24 +275,20 @@
       <option name="presentableId" value="Default" />
       <updated>1553386783900</updated>
       <workItem from="1553386785046" duration="1220000" />
+      <workItem from="1553470340957" duration="51000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1220000" />
+    <option name="totallyTimeSpent" value="1271000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1080" y="164" width="1920" height="1051" extended-state="6" />
+    <frame x="-2" y="-8" width="1924" height="1054" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15298508" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15277778" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="CMake" weight="0.32903227" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32903227" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -283,20 +296,34 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32903227" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CommProtocol.h">
+    <entry file="file://$PROJECT_DIR$/filtering.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitConversion.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/boardInitializer.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/BCI_NeuroRace.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sampler.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/SPI_Definitions.h">
@@ -308,40 +335,29 @@
     <entry file="file://$PROJECT_DIR$/fftWorker.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/filtering.c">
+    <entry file="file://$PROJECT_DIR$/CommProtocol.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sampler.c">
+    <entry file="file://$PROJECT_DIR$/controller.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/BitConversion.c">
+    <entry file="file://$PROJECT_DIR$/calibration.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/boardInitializer.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/control.c">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controller.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#1#24#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="460">
+          <caret line="20" column="13" lean-forward="true" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
         </state>
       </provider>
     </entry>

@@ -6,7 +6,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/BitConversion.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.o"
   "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/boardInitializer.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.o"
+  "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibration.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/calibration.c.o"
   "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibrator.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/calibrator.c.o"
+  "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/control.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/control.c.o"
   "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/controller.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/controller.c.o"
   "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/fftWorker.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.o"
   "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/filtering.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/filtering.c.o"
