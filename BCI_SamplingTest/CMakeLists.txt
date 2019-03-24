@@ -14,5 +14,6 @@ include_directories(/home/lhrobs/raspberrypi/rootfs/usr/local/include)
 link_directories(/home/lhrobs/raspberrypi/rootfs/usr/local/lib)
 
 add_executable(BCI_SamplingTest main.c boardInitializer.c SPI_Definitions.h
-        sampler.c BCI_SamplingTest.h BitConversion.c fftWorker.c printer.c)
+        sampler.c BCI_SamplingTest.h BitConversion.c fftWorker.c printer.c filtering.c)
 target_link_libraries(BCI_SamplingTest pthread bcm2835 fftw3 m)
+target_compile_definitions(BCI_SamplingTest PUBLIC BANDPASS)

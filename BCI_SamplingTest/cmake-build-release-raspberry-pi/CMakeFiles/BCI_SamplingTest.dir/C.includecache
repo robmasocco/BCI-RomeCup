@@ -7,10 +7,6 @@
 #IncludeRegexTransform: 
 
 /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/BCI_SamplingTest.h
-sched.h
--
-
-/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/BitConversion.c
 
 /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/SPI_Definitions.h
 
@@ -45,6 +41,10 @@ fftw3.h
 -
 bcm2835.h
 -
+BCI_SamplingTest.h
+/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/BCI_SamplingTest.h
+
+/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/filtering.c
 BCI_SamplingTest.h
 /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/BCI_SamplingTest.h
 

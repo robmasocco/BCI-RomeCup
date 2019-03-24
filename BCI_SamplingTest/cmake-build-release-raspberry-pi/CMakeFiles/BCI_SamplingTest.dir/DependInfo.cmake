@@ -7,11 +7,17 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/BitConversion.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.o"
   "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/boardInitializer.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.o"
   "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/fftWorker.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o"
+  "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/filtering.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/filtering.c.o"
   "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/main.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/main.c.o"
   "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/printer.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/printer.c.o"
   "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/sampler.c" "/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-release-raspberry-pi/CMakeFiles/BCI_SamplingTest.dir/sampler.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
+
+# Preprocessor definitions for this target.
+set(CMAKE_TARGET_DEFINITIONS_C
+  "BANDPASS"
+  )
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH

@@ -14,7 +14,7 @@
 
 #include "BCI_SamplingTest.h"
 
-/* Thread metadata. */
+/* Threads metadata. */
 pthread_attr_t samplerData, printerData;
 pthread_attr_t fftWorkersData[CHANNELS];
 struct sched_param samplerSched, printerSched;
@@ -27,9 +27,11 @@ sem_t fftLocks[CHANNELS][2];
 sem_t printerLocks[CHANNELS][2];
 void *initializerExCode;
 
-extern void *boardInitializer(void *arg);
-extern void *sampler(void *arg);
+/* Threads spawned by main thread. */
+void *boardInitializer(void *arg);
+void *sampler(void *arg);
 
+/* Main thread. */
 int main(void) {
     // Set main thread niceness.
     if (setpriority(PRIO_PROCESS, 0, MAIN_NICE) < 0) {
@@ -102,11 +104,17 @@ int main(void) {
     bcm2835_gpio_fsel(START, BCM2835_GPIO_FSEL_OUTP);
     bcm2835_gpio_fsel(RESET, BCM2835_GPIO_FSEL_OUTP);
     bcm2835_gpio_fsel(CLKSEL, BCM2835_GPIO_FSEL_OUTP);
+    bcm2835_gpio_fsel(PWDN, BCM2835_GPIO_FSEL_OUTP);
     bcm2835_gpio_fsel(DRDY, BCM2835_GPIO_FSEL_INPT);
     bcm2835_gpio_set_pud(DRDY, BCM2835_GPIO_PUD_UP);
     printf("GPIO pins set.\n");
-    // Set clock source and conversions pin.
+    // Reset the board.
     bcm2835_delay(POWERUP_DELAY);
+    bcm2835_gpio_write(PWDN, LOW);
+    bcm2835_delay(INIT_RESET_DELAY);
+    bcm2835_gpio_write(PWDN, HIGH);
+    bcm2835_delay(POST_INIT_RESET_DELAY);
+    // Set clock source and conversions pin.
     bcm2835_gpio_write(CLKSEL, LOW);
     bcm2835_delay(POWERUP_DELAY);
     bcm2835_gpio_write(START, LOW);

@@ -60,80 +60,93 @@ include CMakeFiles/BCI_SamplingTest.dir/flags.make
 CMakeFiles/BCI_SamplingTest.dir/main.c.o: CMakeFiles/BCI_SamplingTest.dir/flags.make
 CMakeFiles/BCI_SamplingTest.dir/main.c.o: ../main.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/BCI_SamplingTest.dir/main.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_SamplingTest.dir/main.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/main.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_SamplingTest.dir/main.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/main.c
 
 CMakeFiles/BCI_SamplingTest.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_SamplingTest.dir/main.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/main.c > CMakeFiles/BCI_SamplingTest.dir/main.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/main.c > CMakeFiles/BCI_SamplingTest.dir/main.c.i
 
 CMakeFiles/BCI_SamplingTest.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_SamplingTest.dir/main.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/main.c -o CMakeFiles/BCI_SamplingTest.dir/main.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/main.c -o CMakeFiles/BCI_SamplingTest.dir/main.c.s
 
 CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.o: CMakeFiles/BCI_SamplingTest.dir/flags.make
 CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.o: ../boardInitializer.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/boardInitializer.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/boardInitializer.c
 
 CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/boardInitializer.c > CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/boardInitializer.c > CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.i
 
 CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/boardInitializer.c -o CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/boardInitializer.c -o CMakeFiles/BCI_SamplingTest.dir/boardInitializer.c.s
 
 CMakeFiles/BCI_SamplingTest.dir/sampler.c.o: CMakeFiles/BCI_SamplingTest.dir/flags.make
 CMakeFiles/BCI_SamplingTest.dir/sampler.c.o: ../sampler.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/BCI_SamplingTest.dir/sampler.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_SamplingTest.dir/sampler.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/sampler.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_SamplingTest.dir/sampler.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/sampler.c
 
 CMakeFiles/BCI_SamplingTest.dir/sampler.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_SamplingTest.dir/sampler.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/sampler.c > CMakeFiles/BCI_SamplingTest.dir/sampler.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/sampler.c > CMakeFiles/BCI_SamplingTest.dir/sampler.c.i
 
 CMakeFiles/BCI_SamplingTest.dir/sampler.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_SamplingTest.dir/sampler.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/sampler.c -o CMakeFiles/BCI_SamplingTest.dir/sampler.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/sampler.c -o CMakeFiles/BCI_SamplingTest.dir/sampler.c.s
 
 CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.o: CMakeFiles/BCI_SamplingTest.dir/flags.make
 CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.o: ../BitConversion.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/BitConversion.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/BitConversion.c
 
 CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/BitConversion.c > CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/BitConversion.c > CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.i
 
 CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/BitConversion.c -o CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/BitConversion.c -o CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.s
 
 CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o: CMakeFiles/BCI_SamplingTest.dir/flags.make
 CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o: ../fftWorker.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/fftWorker.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/fftWorker.c
 
 CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/fftWorker.c > CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/fftWorker.c > CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.i
 
 CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/fftWorker.c -o CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/fftWorker.c -o CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.s
 
 CMakeFiles/BCI_SamplingTest.dir/printer.c.o: CMakeFiles/BCI_SamplingTest.dir/flags.make
 CMakeFiles/BCI_SamplingTest.dir/printer.c.o: ../printer.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/BCI_SamplingTest.dir/printer.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_SamplingTest.dir/printer.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/printer.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_SamplingTest.dir/printer.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/printer.c
 
 CMakeFiles/BCI_SamplingTest.dir/printer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_SamplingTest.dir/printer.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/printer.c > CMakeFiles/BCI_SamplingTest.dir/printer.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/printer.c > CMakeFiles/BCI_SamplingTest.dir/printer.c.i
 
 CMakeFiles/BCI_SamplingTest.dir/printer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_SamplingTest.dir/printer.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/printer.c -o CMakeFiles/BCI_SamplingTest.dir/printer.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/printer.c -o CMakeFiles/BCI_SamplingTest.dir/printer.c.s
+
+CMakeFiles/BCI_SamplingTest.dir/filtering.c.o: CMakeFiles/BCI_SamplingTest.dir/flags.make
+CMakeFiles/BCI_SamplingTest.dir/filtering.c.o: ../filtering.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/BCI_SamplingTest.dir/filtering.c.o"
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_SamplingTest.dir/filtering.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/filtering.c
+
+CMakeFiles/BCI_SamplingTest.dir/filtering.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_SamplingTest.dir/filtering.c.i"
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/filtering.c > CMakeFiles/BCI_SamplingTest.dir/filtering.c.i
+
+CMakeFiles/BCI_SamplingTest.dir/filtering.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_SamplingTest.dir/filtering.c.s"
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/filtering.c -o CMakeFiles/BCI_SamplingTest.dir/filtering.c.s
 
 # Object files for target BCI_SamplingTest
 BCI_SamplingTest_OBJECTS = \
@@ -142,7 +155,8 @@ BCI_SamplingTest_OBJECTS = \
 "CMakeFiles/BCI_SamplingTest.dir/sampler.c.o" \
 "CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.o" \
 "CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o" \
-"CMakeFiles/BCI_SamplingTest.dir/printer.c.o"
+"CMakeFiles/BCI_SamplingTest.dir/printer.c.o" \
+"CMakeFiles/BCI_SamplingTest.dir/filtering.c.o"
 
 # External object files for target BCI_SamplingTest
 BCI_SamplingTest_EXTERNAL_OBJECTS =
@@ -153,9 +167,10 @@ BCI_SamplingTest: CMakeFiles/BCI_SamplingTest.dir/sampler.c.o
 BCI_SamplingTest: CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.o
 BCI_SamplingTest: CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o
 BCI_SamplingTest: CMakeFiles/BCI_SamplingTest.dir/printer.c.o
+BCI_SamplingTest: CMakeFiles/BCI_SamplingTest.dir/filtering.c.o
 BCI_SamplingTest: CMakeFiles/BCI_SamplingTest.dir/build.make
 BCI_SamplingTest: CMakeFiles/BCI_SamplingTest.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable BCI_SamplingTest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_SamplingTest/cmake-build-debug-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking C executable BCI_SamplingTest"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BCI_SamplingTest.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

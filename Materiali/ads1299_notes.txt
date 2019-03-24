@@ -26,7 +26,8 @@ NOTAZIONE TRA I DATASHEET E NOI:
 	BIAS = referenza
 	REFERENCE = terra
 Modo unipolare (J6): l'elettrodo si collega al pin + di ciascun canale.
-Scollegare tutti i ponticelli orizzontali!
+Collegare i ponticelli orizzontali pin - di ciascun canale (modo unipolare), e collegarli tutti
+a massa.
 Canali 1 e 2: elettrodi O1 e O2.
 Patient BIAS e Reference (JP25): Si tratta dei segnali di referenza e terra
 dell'utente. Scollegare tutti i ponticelli orizzontali!
@@ -42,10 +43,15 @@ CSB
 SCLK
 DIN
 DOUT
+PWDN
 
 	CONFIGURAZIONE ALLO STARTUP
 Mettere START LOW.
 Mettere RESET HIGH.
+Mettere PWDN LOW.
+Attendere 100 ms.
+Mettere PWDN HIGH.
+Attendere 5 ms.
 Mettere CLKSEL LOW.
 Attendere 5 ms.
 Mettere RESET LOW.

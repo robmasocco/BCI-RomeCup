@@ -8,6 +8,7 @@
 
 #define UNUSED(arg) (void)arg
 
+/* SPI commands needed for board setup. */
 char channelsAddrs[] = {CH1SET_ADDR, CH2SET_ADDR, CH3SET_ADDR, CH4SET_ADDR,
                         CH5SET_ADDR, CH6SET_ADDR, CH7SET_ADDR, CH8SET_ADDR};
 
@@ -23,6 +24,7 @@ char settingsCheck[]   = {RREG | CONFIG1_ADDR, RREG_VAL,
 
 char settingsChOut[sizeof settingsCheck];
 
+/* Thread that sets up the board for sampling. */
 void *boardInitializer(void *arg) {
     UNUSED(arg);
     // Open and set SPI interface.

@@ -5,6 +5,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/BCI_SamplingTest.dir/BitConversion.c.o"
   "CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o"
   "CMakeFiles/BCI_SamplingTest.dir/printer.c.o"
+  "CMakeFiles/BCI_SamplingTest.dir/filtering.c.o"
   "BCI_SamplingTest.pdb"
   "BCI_SamplingTest"
 )

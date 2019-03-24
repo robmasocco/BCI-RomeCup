@@ -204,6 +204,33 @@ fftWorker.c.s:
 	$(MAKE) -f CMakeFiles/BCI_SamplingTest.dir/build.make CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.s
 .PHONY : fftWorker.c.s
 
+filtering.o: filtering.c.o
+
+.PHONY : filtering.o
+
+# target to build an object file
+filtering.c.o:
+	$(MAKE) -f CMakeFiles/BCI_SamplingTest.dir/build.make CMakeFiles/BCI_SamplingTest.dir/filtering.c.o
+.PHONY : filtering.c.o
+
+filtering.i: filtering.c.i
+
+.PHONY : filtering.i
+
+# target to preprocess a source file
+filtering.c.i:
+	$(MAKE) -f CMakeFiles/BCI_SamplingTest.dir/build.make CMakeFiles/BCI_SamplingTest.dir/filtering.c.i
+.PHONY : filtering.c.i
+
+filtering.s: filtering.c.s
+
+.PHONY : filtering.s
+
+# target to generate assembly for a file
+filtering.c.s:
+	$(MAKE) -f CMakeFiles/BCI_SamplingTest.dir/build.make CMakeFiles/BCI_SamplingTest.dir/filtering.c.s
+.PHONY : filtering.c.s
+
 main.o: main.c.o
 
 .PHONY : main.o
@@ -303,6 +330,9 @@ help:
 	@echo "... fftWorker.o"
 	@echo "... fftWorker.i"
 	@echo "... fftWorker.s"
+	@echo "... filtering.o"
+	@echo "... filtering.i"
+	@echo "... filtering.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

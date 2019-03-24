@@ -18,9 +18,11 @@ extern pthread_attr_t fftWorkersData[CHANNELS];
 
 extern sem_t fftLocks[CHANNELS][2];
 
-extern void *fftWorker(void *index);
-extern void *printer(void *arg);
+/* Threads spawned by sampler. */
+void *fftWorker(void *index);
+void *printer(void *arg);
 
+/* SPI commands needed for sampling. */
 char readDataCmd[] = {RDATA, NOP, NOP, NOP,
                       NOP, NOP, NOP, NOP, NOP, NOP, NOP, NOP,
                       NOP, NOP, NOP, NOP, NOP, NOP, NOP, NOP,
@@ -33,6 +35,7 @@ unsigned char tempSamples[CHANNELS][NSAMPLES][3];
 fftw_plan plans[CHANNELS];
 fftw_complex *fftValues[CHANNELS];
 
+/* Thread that samples data with the TI board. */
 void *sampler(void *arg) {
     UNUSED(arg);
     // Prepare for FFT.
@@ -76,25 +79,30 @@ void *sampler(void *arg) {
     // Wait for ADCs to settle and ignore first two samples.
     while (bcm2835_gpio_lev(DRDY) != LOW);
     while (bcm2835_gpio_lev(DRDY) != HIGH);
-    // Acquire one set of samples to set up the filter.
-    /*for (int i = 0; i < NSAMPLES; i++) {
-        // Wait for falling edge on DRDY (EOC).
-        while (bcm2835_gpio_lev(DRDY) != LOW);
-        // Read data.
-        bcm2835_spi_transfernb(readDataCmd, readData, sizeof readDataCmd);
-        // Copy samples.
-        for (int t = 0; t < CHANNELS; t++)
-            memcpy(tempSamples[t][i], readData + 4 + (t * 3), 3);
-        // Wait for next rising edge on EOC.
-        while (bcm2835_gpio_lev(DRDY) != HIGH);
+
+#ifdef BANDPASS
+    for (int f = 0; f < FILTER_RUNS; f++) {
+        // Acquire some sets of samples to set up the filter.
+        for (int i = 0; i < NSAMPLES; i++) {
+            // Wait for falling edge on DRDY (EOC).
+            while (bcm2835_gpio_lev(DRDY) != LOW);
+            // Read data.
+            bcm2835_spi_transfernb(readDataCmd, readData, sizeof readDataCmd);
+            // Copy samples.
+            for (int t = 0; t < CHANNELS; t++)
+                memcpy(tempSamples[t][i], readData + 4 + (t * 3), 3);
+            // Wait for next rising edge on EOC.
+            while (bcm2835_gpio_lev(DRDY) != HIGH);
+        }
+        // Notify workers.
+        for (int i = 0; i < CHANNELS; i++)
+            sem_post(&(fftLocks[i][0]));
+        // Wait for data acquisition by workers.
+        for (int i = 0; i < CHANNELS; i++)
+            sem_wait(&(fftLocks[i][1]));
     }
-    // Notify workers.
-    for (int i = 0; i < CHANNELS; i++)
-        sem_post(&(fftLocks[i][0]));
-    // Wait for data acquisition by workers.
-    for (int i = 0; i < CHANNELS; i++)
-        sem_wait(&(fftLocks[i][1]));
-    printf("Channel filters ready.\n");*/
+#endif
+
     // Do the acquisitions.
     for (int k = 0; k < ACQUISITIONS; k++) {
         for (int i = 0; i < NSAMPLES; i++) {

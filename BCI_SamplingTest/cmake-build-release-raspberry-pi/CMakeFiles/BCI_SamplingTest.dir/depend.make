@@ -13,6 +13,9 @@ CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o: ../fftWorker.c
 CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o: /home/lhrobs/raspberrypi/rootfs/usr/local/include/bcm2835.h
 CMakeFiles/BCI_SamplingTest.dir/fftWorker.c.o: /home/lhrobs/raspberrypi/rootfs/usr/local/include/fftw3.h
 
+CMakeFiles/BCI_SamplingTest.dir/filtering.c.o: ../BCI_SamplingTest.h
+CMakeFiles/BCI_SamplingTest.dir/filtering.c.o: ../filtering.c
+
 CMakeFiles/BCI_SamplingTest.dir/main.c.o: ../BCI_SamplingTest.h
 CMakeFiles/BCI_SamplingTest.dir/main.c.o: ../main.c
 CMakeFiles/BCI_SamplingTest.dir/main.c.o: /home/lhrobs/raspberrypi/rootfs/usr/local/include/bcm2835.h

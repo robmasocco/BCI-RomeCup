@@ -21,77 +21,69 @@ double amplitudes[CHANNELS][FFTSAMPLES];
 extern sem_t fftLocks[CHANNELS][2];
 extern sem_t printerLocks[CHANNELS][2];
 
-extern double convertBit(unsigned char *bytes, int nByte, int enob, int invert);
+double convertBit(const unsigned char *bytes, int nByte, int enob, int invert);
 
-void filtering(void);
-
+#ifdef BANDPASS
 __thread double x[4], xn[4];
+void filtering(void);
+#endif
+
 __thread int chanIndex;
 
+/* Thread that processes samples from a channel. */
 void *fftWorker(void *index) {
     chanIndex = (int)index;
+
+#ifdef BANDPASS
     // Reset filter states.
-    /*x[0] = 0.0;
+    x[0] = 0.0;
     x[1] = 0.0;
     x[2] = 0.0;
-    x[3] = 0.0;*/
-    /*x[4] = 0.0;
-    x[5] = 0.0;
-    x[6] = 0.0;
-    x[7] = 0.0;*/
-    // Set up the filter by acquiring and filtering a set of samples.
-    /*sem_wait(&(fftLocks[chanIndex][0]));  // Wait for data.
-    for (int i = 0; i < NSAMPLES; i++)
-        rawSamples[chanIndex][i] = convertBit(tempSamples[chanIndex][i],
-                                              3, ENOB, 1);
-    sem_post(&(fftLocks[chanIndex][1]));  // Restart sampling.
-    filtering();*/
+    x[3] = 0.0;
+    // Set up the filter.
+    for (int f = 0; f < FILTER_RUNS; f++) {
+        sem_wait(&(fftLocks[chanIndex][0]));  // Wait for data.
+        for (int i = 0; i < NSAMPLES; i++)
+            rawSamples[chanIndex][i] = convertBit(tempSamples[chanIndex][i],
+                                                  3, ENOB, 1);
+        sem_post(&(fftLocks[chanIndex][1]));  // Restart sampling.
+        filtering();
+    }
+#endif
+
     // Process the acquisitions.
     for (int a = 0; a < ACQUISITIONS; a++) {
         // Wait for new data.
         sem_wait(&(fftLocks[chanIndex][0]));
         // Copy data from temporary storage.
         for (int i = 0; i < NSAMPLES; i++)
-            /*rawSamples[chanIndex][i] = convertBit(tempSamples[chanIndex][i],
-                                                  3, ENOB, 1);*/
+
+#ifdef BANDPASS
+            rawSamples[chanIndex][i] = convertBit(tempSamples[chanIndex][i],
+                                                  3, ENOB, 1);
+#else
             fftSamples[chanIndex][i] = convertBit(tempSamples[chanIndex][i],
                                                   3, ENOB, 1);
+#endif
+
         // Restart sampling.
         sem_post(&(fftLocks[chanIndex][1]));
+
+#ifdef BANDPASS
         // Apply filtering to current sampling.
-        //filtering();
+        filtering();
+#endif
+
         // Do the FFT.
         fftw_execute(plans[chanIndex]);
         // Acquire channel with printer.
         sem_wait(&(printerLocks[chanIndex][0]));
-        // Compute amplitude spectrum for this channel.
+        // Compute normalized amplitude spectrum for this channel.
         for (int j = 0; j < FFTSAMPLES; j++)
-            amplitudes[chanIndex][j] = cabs(fftValues[chanIndex][j]);
+            amplitudes[chanIndex][j] = cabs(fftValues[chanIndex][j]) /
+                                       (double)NSAMPLES;
         // Notify the printer.
         sem_post(&(printerLocks[chanIndex][1]));
     }
     pthread_exit(NULL);
-}
-
-void filtering(void) {
-    for (int k = 0; k < NSAMPLES; k++) {
-        // Compute states dynamic.
-        xn[0] = (1.047972048879746 * x[0]) + (-0.753869378152208 * x[1]) +
-                (0.521134146729929 * x[2]) + (-0.299899053931107 * x[3]);
-        xn[1] = 1.0 * x[0];
-        xn[2] = 0.5 * x[1];
-        xn[3] = 0.25 * x[2];
-        // Add input.
-        xn[0] += (1.0 * rawSamples[chanIndex][k]);
-        // Compute filter outputs.
-        fftSamples[chanIndex][k] = (0.051926380144877 * x[0]) +
-                                   (0.278557250291417 * x[1]) +
-                                   (0.290157822447976 * x[2]) +
-                                   (0.058040767908851 * x[3]);
-        // Update states.
-        x[0] = xn[0];
-        x[1] = xn[1];
-        x[2] = xn[2];
-        x[3] = xn[3];
-    }
 }
