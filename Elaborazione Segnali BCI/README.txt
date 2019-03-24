@@ -1,9 +1,7 @@
-﻿Nel file zip sono presenti le seguenti cartelle
+Nel file zip sono presenti le seguenti cartelle
   MATLAB
     BCI: contiene gli script relativi all'analisi dei segnali
     Funzioni: contiene le funzioni utilizzate negli script
-  Segnali
-    AAAAMMGG: Contengono le acquisizioni. i file mat sono i txt già importati
     
 Importazione segnali txt:
   1) Aprire il file e copiare tutto il contenuto
@@ -18,6 +16,7 @@ Elaborazione segnali importati:
   2) i risultati possono essere plottati con
     - SignalPlotSamples: esegue il plot dei campioni
     - SignalPlotSpectrum: esegue il plot dello spettro
+    - SignalPlotAll: esegue contemporaneamente il plot dei campioni e dello spettro
     Nota: Gli script mettono in pausa MatLab. Premere un qualsiasi tasto per procedere
           Per interrompere l'esecuzione degli script premere <Ctrl + c>
   
