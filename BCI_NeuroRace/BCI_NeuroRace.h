@@ -18,19 +18,20 @@
 /* Thread scheduling settings. */
 #define SAMPLER_POLICY SCHED_FIFO
 #define WORKERS_POLICY SCHED_FIFO
-#define PRINTER_POLICY SCHED_RR
+#define CONTROLLER_POLICY SCHED_RR
+#define CALIBRATOR_POLICY SCHED_RR
 #define SCHED_LEVEL 99
 #define MAIN_NICE -20
 #define SAMPLER_CORE 0
 #define FFT_O1_CORE 2
 #define FFT_O2_CORE 3
-#define PRINTER_CORE 1
+#define CONTROLLER_CORE 1
+#define CALIBRATOR_CORE 1
 
 /* Sampling parameters. */
 #define FILTER_RUNS 2
 #define NSAMPLES 4000
 #define FFTSAMPLES ((NSAMPLES / 2) + 1)
-#define ACQUISITIONS 30
 #define ENOB 19
 #define CHANNELS 2
 #define MAXCHANNELS 8
