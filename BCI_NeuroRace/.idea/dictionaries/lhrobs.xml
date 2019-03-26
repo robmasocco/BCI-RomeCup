@@ -11,6 +11,7 @@
       <w>powerup</w>
       <w>pwdn</w>
       <w>sched</w>
+      <w>setsockopt</w>
     </words>
   </dictionary>
 </component>

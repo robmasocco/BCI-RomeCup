@@ -36,6 +36,7 @@ pthread_t initializerTID, samplerTID;
 
 sem_t fftLocks[CHANNELS][2];
 sem_t dataLocks[CHANNELS][2];
+sem_t startSampling, startCalibration, endCalibration;
 
 pthread_mutex_t controlLock;
 
@@ -91,6 +92,9 @@ int main(void) {
     // Configure main thread signal mask.
     pthread_sigmask(SIG_BLOCK, &mainSet, NULL);
     // Initialize semaphores.
+    sem_init(&startSampling, 0, 0);
+    sem_init(&startCalibration, 0, 0);
+    sem_init(&endCalibration, 0, 0);
     for (int i = 0; i < CHANNELS; i++) {
         sem_init(&(fftLocks[i][0]), 0, 0);
         sem_init(&(fftLocks[i][1]), 0, 0);
@@ -227,7 +231,10 @@ int main(void) {
         sem_destroy(&(dataLocks[i][0]));
         sem_destroy(&(dataLocks[i][1]));
     }
+    sem_destroy(&startSampling);
+    sem_destroy(&startCalibration);
+    sem_destroy(&endCalibration);
     pthread_mutex_destroy(&controlLock);
-    printf("All done!\n");
+    printf("Closing...\n");
     exit(EXIT_SUCCESS);
 }

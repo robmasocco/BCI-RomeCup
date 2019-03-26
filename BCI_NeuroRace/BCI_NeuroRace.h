@@ -35,3 +35,6 @@
 #define ENOB 19
 #define CHANNELS 2
 #define MAXCHANNELS 8
+#define BINS 6
+#define CALIBRATION_RUNS 10
+#define CALIBRATION_SECONDS 5

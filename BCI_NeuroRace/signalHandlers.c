@@ -17,7 +17,7 @@
 extern pthread_t samplerTID;
 
 /* Thread-specific signal handler. */
-__thread void(*closeRoutine)(void) = NULL;
+__thread void (*closeRoutine)(void) = NULL;
 
 /* Program termination procedure, run by main thread. */
 void terminate(int sig) {
