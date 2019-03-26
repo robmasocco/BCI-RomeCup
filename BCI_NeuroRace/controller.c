@@ -14,7 +14,7 @@
 #include "BCI_NeuroRace.h"
 #include "CommProtocol.h"
 
-#define GAME_IP "192.168.2.111"
+#define PI_IP "192.168.2.143"
 #define GAME_PORT 4444
 #define BACKLOG 1
 
@@ -73,7 +73,7 @@ void *controller(void *arg) {
     memset(&gameAddr, 0, sizeof gameAddr);
     sockAddr.sin_family = AF_INET;
     sockAddr.sin_port = (uint16_t)htons(GAME_PORT);  // WTF
-    inet_pton(AF_INET, GAME_IP, &(sockAddr.sin_addr.s_addr));
+    inet_pton(AF_INET, PI_IP, &(sockAddr.sin_addr.s_addr));
     if (bind(sock, (struct sockaddr *)&sockAddr, sizeof sockAddr)) {
         fprintf(stderr, "ERROR: Failed to bind socket to Ethernet port.\n");
         perror("bind");
