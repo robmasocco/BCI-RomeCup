@@ -24,6 +24,7 @@ extern sem_t dataLocks[CHANNELS][2];
 
 double convertBit(const unsigned char *bytes, int nByte, int enob, int invert);
 
+/* Band-pass numeric filter data. */
 #ifdef BANDPASS
 __thread double x[4], xn[4];
 void filtering(void);

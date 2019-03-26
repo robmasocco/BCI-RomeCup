@@ -70,6 +70,14 @@ void *calibrator(void *arg) {
         kill(procPID, SIGTERM);
     }
     printf("Filters setup completed.\n");
+#else
+    // Jump to phase one.
+    sendRes = send(gameSock, &msg, 1, MSG_NOSIGNAL);
+    if (sendRes != 1) {
+        fprintf(stderr, "ERROR: Failed to send message on socket.\n");
+        perror("send");
+        kill(procPID, SIGTERM);
+    }
 #endif
 
     // Do the calibration phases.
