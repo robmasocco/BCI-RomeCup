@@ -4,4 +4,4 @@
 // Le frequenze sono rispettivamente 8, 10, 11, 13, 22 e 26 Hz.
 extern double amplitudes[CHANNELS][BINS];
 
-// Unica funzione che restituisce -1, 0 o 1.
+// Unica funzione che restituisce -1 (sx), 0 (centro) o 1 (dx).

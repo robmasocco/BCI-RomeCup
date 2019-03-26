@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/types.h>
 #include <unistd.h>
 #include <sys/time.h>
 #include <sys/resource.h>
@@ -15,6 +16,8 @@
 #include <bcm2835.h>
 
 #include "BCI_NeuroRace.h"
+
+pid_t procPID;
 
 /* Data structures for signal handling. */
 struct sigaction ignAct, closeAct, termAct;
@@ -52,6 +55,7 @@ void *sampler(void *arg);
 
 /* Main thread. Bootstraps the application. */
 int main(void) {
+    procPID = getpid();
     // Set main thread niceness.
     if (setpriority(PRIO_PROCESS, 0, MAIN_NICE) < 0) {
         fprintf(stderr, "ERROR: Failed to set main thread niceness.\n");
@@ -177,6 +181,7 @@ int main(void) {
     bcm2835_delay(INIT_RESET_DELAY);
     bcm2835_gpio_write(PWDN, HIGH);
     bcm2835_delay(POST_INIT_RESET_DELAY);
+    printf("TI board reset.\n");
     // Set clock source and conversions pin.
     bcm2835_gpio_write(CLKSEL, LOW);
     bcm2835_delay(POWERUP_DELAY);

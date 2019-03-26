@@ -18,6 +18,8 @@
 #define GAME_PORT 4444
 #define BACKLOG 1
 
+extern pid_t procPID;
+
 extern sigset_t workerSet;
 
 extern __thread void (*closeRoutine)(void);
@@ -58,54 +60,56 @@ void *controller(void *arg) {
     if (sock < 0) {
         fprintf(stderr, "ERROR: Failed to open socket.\n");
         perror("socket");
-        raise(SIGTERM);
+        kill(procPID, SIGTERM);
         pthread_exit(NULL);
     }
     if (setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof yes)) {
         fprintf(stderr, "ERROR: Failed to configure socket.\n");
         perror("setsockopt");
-        raise(SIGTERM);
+        kill(procPID, SIGTERM);
         pthread_exit(NULL);
     }
     memset(&sockAddr, 0, sizeof sockAddr);
     memset(&gameAddr, 0, sizeof gameAddr);
     sockAddr.sin_family = AF_INET;
-    sockAddr.sin_port = (uint16_t)htons(GAME_PORT); // WTF
+    sockAddr.sin_port = (uint16_t)htons(GAME_PORT);  // WTF
     inet_pton(AF_INET, GAME_IP, &(sockAddr.sin_addr.s_addr));
     if (bind(sock, (struct sockaddr *)&sockAddr, sizeof sockAddr)) {
         fprintf(stderr, "ERROR: Failed to bind socket to Ethernet port.\n");
         perror("bind");
-        raise(SIGTERM);
+        kill(procPID, SIGTERM);
         pthread_exit(NULL);
     }
     if (listen(sock, BACKLOG)) {
         fprintf(stderr, "ERROR: Failed to set socket as listening.\n");
         perror("listen");
-        raise(SIGTERM);
+        kill(procPID, SIGTERM);
         pthread_exit(NULL);
     }
+    printf("Socket opened.\n");
     // Wait for game to connect.
     gameSock = accept(sock, (struct sockaddr *)&gameAddr, &gameAddrLen);
     if (gameSock < 0) {
         fprintf(stderr, "ERROR: Failed to accept connection with game.\n");
         perror("accept");
-        raise(SIGTERM);
+        kill(procPID, SIGTERM);
         pthread_exit(NULL);
     }
     close(sock);
+    printf("Connected with game.\n");
     // Wait for calibration start message.
     do {
         recvRes = recv(gameSock, &msg, 1, 0);
         if (recvRes == 0) {
             fprintf(stderr, "Game closed connection.\n");
             close(gameSock);
-            raise(SIGTERM);
+            kill(procPID, SIGTERM);
             pthread_exit(NULL);
         } else if (recvRes < 0) {
             fprintf(stderr, "ERROR: Failed to read from socket.\n");
             perror("recv");
             close(gameSock);
-            raise(SIGTERM);
+            kill(procPID, SIGTERM);
             pthread_exit(NULL);
         }
     } while (msg != START_CALIBRATION);
@@ -113,7 +117,7 @@ void *controller(void *arg) {
     if (pthread_create(&calibratorTID, &calibratorData, calibrator, NULL)) {
         fprintf(stderr, "ERROR: Failed to spawn calibrator thread.\n");
         close(gameSock);
-        raise(SIGTERM);
+        kill(procPID, SIGTERM);
         pthread_exit(NULL);
     }
     // Start sampling.
@@ -143,14 +147,16 @@ void *controller(void *arg) {
         if (sendRes != 1) {
             fprintf(stderr, "ERROR: Failed to send message on socket.\n");
             perror("send");
-            raise(SIGTERM);
+            kill(procPID, SIGTERM);
         }
+        printf("Sent control: '%c'.\n", msg);
     }
 }
 
 /* Termination procedure for controller thread. */
 void controllerTermination(void) {
     close(gameSock);
+    pthread_kill(calibratorTID, SIGUSR1);
     pthread_join(calibratorTID, NULL);
     pthread_exit(NULL);
 }

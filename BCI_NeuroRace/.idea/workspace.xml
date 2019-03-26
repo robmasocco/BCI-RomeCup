@@ -15,13 +15,54 @@
     <list default="true" id="2ed808d6-aa0b-4aa2-8261-bc6122a9e6b6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/lhrobs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/lhrobs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCI_NeuroRace.h" beforeDir="false" afterPath="$PROJECT_DIR$/BCI_NeuroRace.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CommProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/CommProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calibration.c" beforeDir="false" afterPath="$PROJECT_DIR$/calibration.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/calibrator.c" beforeDir="false" afterPath="$PROJECT_DIR$/calibrator.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/BCI_NeuroRace.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/BCI_NeuroRace.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/BCI_NeuroRace.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/BCI_NeuroRace.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/3.13.2/CMakeCCompiler.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/C.includecache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/calibration.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/calibrator.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/control.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/controller.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/filtering.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/main.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/sampler.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Progress/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Progress/10" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Progress/11" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Progress/12" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Progress/2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Progress/3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Progress/4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Progress/5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Progress/6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Progress/7" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Progress/8" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Progress/9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/Progress/count.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-release-raspberry-pi/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/control.c" beforeDir="false" afterPath="$PROJECT_DIR$/control.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller.c" beforeDir="false" afterPath="$PROJECT_DIR$/controller.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fftWorker.c" beforeDir="false" afterPath="$PROJECT_DIR$/fftWorker.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sampler.c" beforeDir="false" afterPath="$PROJECT_DIR$/sampler.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/signalHandlers.c" beforeDir="false" afterPath="$PROJECT_DIR$/signalHandlers.c" afterDir="false" />
@@ -43,7 +84,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
+                <state relative-caret-position="360">
                   <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
                 </state>
               </provider>
@@ -55,6 +96,7 @@
                 <state>
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
+                    <element signature="e#1585#1712#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -76,7 +118,6 @@
             <entry file="file://$PROJECT_DIR$/controller.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
-                  <caret lean-forward="true" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -84,13 +125,13 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/calibrator.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
                   <caret lean-forward="true" />
                   <folding>
-                    <element signature="e#57#75#0" expanded="true" />
+                    <element signature="e#0#18#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -112,7 +153,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/main.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
@@ -128,7 +169,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/BCI_NeuroRace.h">
               <provider selected="true" editor-type-id="text-editor" />
             </entry>
@@ -147,8 +188,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controller.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1056">
-                  <caret line="46" selection-start-line="46" selection-end-line="46" />
+                <state relative-caret-position="3120">
+                  <caret line="162" selection-start-line="162" selection-end-line="162" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -159,8 +200,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/signalHandlers.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="437">
-                  <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+                <state>
+                  <caret lean-forward="true" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -171,7 +212,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/boardInitializer.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="138">
+                <state relative-caret-position="120">
                   <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
@@ -183,8 +224,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/calibrator.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="715">
-                  <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
+                <state relative-caret-position="2100">
+                  <caret line="116" column="21" selection-start-line="116" selection-start-column="21" selection-end-line="116" selection-end-column="21" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -203,14 +244,12 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/fftWorker.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
-                  <caret lean-forward="true" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
-                    <element signature="e#1736#1863#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -225,6 +264,11 @@
       </split-second>
     </splitter>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>raise</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -235,24 +279,24 @@
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/boardInitializer.c" />
         <option value="$PROJECT_DIR$/CommProtocol.h" />
-        <option value="$PROJECT_DIR$/main.c" />
-        <option value="$PROJECT_DIR$/control.c" />
         <option value="$PROJECT_DIR$/calibration.c" />
+        <option value="$PROJECT_DIR$/fftWorker.c" />
+        <option value="$PROJECT_DIR$/BCI_NeuroRace.h" />
+        <option value="$PROJECT_DIR$/control.c" />
         <option value="$PROJECT_DIR$/signalHandlers.c" />
+        <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/sampler.c" />
         <option value="$PROJECT_DIR$/controller.c" />
-        <option value="$PROJECT_DIR$/fftWorker.c" />
         <option value="$PROJECT_DIR$/calibrator.c" />
-        <option value="$PROJECT_DIR$/BCI_NeuroRace.h" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2" />
-    <option name="y" value="-8" />
-    <option name="width" value="1924" />
-    <option name="height" value="1054" />
+    <option name="x" value="1080" />
+    <option name="y" value="164" />
+    <option name="width" value="1920" />
+    <option name="height" value="1051" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -262,6 +306,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,7 +318,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -317,20 +361,20 @@
       <workItem from="1553470340957" duration="51000" />
       <workItem from="1553532272601" duration="5473000" />
       <workItem from="1553605418517" duration="14913000" />
+      <workItem from="1553631084226" duration="3045000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21657000" />
+    <option name="totallyTimeSpent" value="24702000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-8" width="1924" height="1054" extended-state="6" />
+    <frame x="1080" y="164" width="1920" height="1051" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15277778" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.15245202" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32899022" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -342,7 +386,8 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32903227" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32899022" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32795697" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32899022" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -359,9 +404,6 @@
     <entry file="file://$PROJECT_DIR$/filtering.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/BitConversion.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/libc/usr/include/arm-linux-gnueabihf/bits/byteswap.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
@@ -376,22 +418,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/control.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/calibration.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CommProtocol.h">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/control.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/arm-linux-gnueabihf/libc/usr/include/stdio.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="838" column="12" selection-start-line="838" selection-start-column="12" selection-end-line="838" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/signalHandlers.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BitConversion.c">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fftWorker.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#1585#1712#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -405,22 +477,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#48#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/BCI_NeuroRace.h">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/sampler.c">
       <provider selected="true" editor-type-id="text-editor">
@@ -435,22 +493,6 @@
     <entry file="file://$PROJECT_DIR$/controller.c">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BCI_NeuroRace.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CommProtocol.h">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fftWorker.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -462,7 +504,17 @@
         <state>
           <caret lean-forward="true" />
           <folding>
-            <element signature="e#57#75#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#48#66#0" expanded="true" />
           </folding>
         </state>
       </provider>

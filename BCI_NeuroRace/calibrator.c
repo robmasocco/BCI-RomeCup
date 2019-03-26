@@ -14,6 +14,8 @@
 #include "BCI_NeuroRace.h"
 #include "CommProtocol.h"
 
+extern pid_t procPID;
+
 extern sigset_t workerSet;
 
 extern __thread void (*closeRoutine)(void);
@@ -48,6 +50,7 @@ void *calibrator(void *arg) {
     ssize_t recvRes, sendRes;
     // Wait for calibration start signal.
     sem_wait(&startCalibration);
+    printf("First calibration started.\n");
 
     // INITIAL CALIBRATION //
 
@@ -64,8 +67,9 @@ void *calibrator(void *arg) {
     if (sendRes != 1) {
         fprintf(stderr, "ERROR: Failed to send message on socket.\n");
         perror("send");
-        raise(SIGTERM);
+        kill(procPID, SIGTERM);
     }
+    printf("Filters setup completed.\n");
 #endif
 
     // Do the calibration phases.
@@ -76,37 +80,46 @@ void *calibrator(void *arg) {
         if (sendRes != 1) {
             fprintf(stderr, "ERROR: Failed to send message on socket.\n");
             perror("send");
-            raise(SIGTERM);
+            kill(procPID, SIGTERM);
         }
+        printf("Calibration phase %d done.\n", i + 1);
     }
+    printf("Initial calibration completed.\n");
     // Send calibration end signal.
     sem_post(&endCalibration);
 
     // NORMAL CALIBRATION LOOP //
     for (;;) {
         // Wait for calibration start message.
-        recvRes = recv(gameSock, &msg, 1, 0);
-        if (recvRes == 0) {
-            raise(SIGTERM);
-        } else if (recvRes == -1) {
-            fprintf(stderr, "ERROR: Failed to receive message on socket.\n");
-            perror("recv");
-            raise(SIGTERM);
-        }
+        do {
+            recvRes = recv(gameSock, &msg, 1, 0);
+            if (recvRes == 0) {
+                // Socket closed: terminate process.
+                kill(procPID, SIGTERM);
+            } else if (recvRes == -1) {
+                fprintf(stderr,
+                        "ERROR: Failed to receive message on socket.\n");
+                perror("recv");
+                kill(procPID, SIGTERM);
+            }
+        } while (msg != START_CALIBRATION);
         // Acquire data processing right.
         pthread_mutex_lock(&controlLock);
         // Do the calibration phases.
+        printf("New calibration requested.\n");
+        msg = END_CALIBRATION;
         for (int i = 0; i < CALIBRATION_RUNS; i++) {
-            msg = END_CALIBRATION;
             acquireData();
             calibrationPhases[i]();
             sendRes = send(gameSock, &msg, 1, MSG_NOSIGNAL);
             if (sendRes != 1) {
                 fprintf(stderr, "ERROR: Failed to send message on socket.\n");
                 perror("send");
-                raise(SIGTERM);
+                kill(procPID, SIGTERM);
             }
+            printf("Calibration phase %d done.\n", i + 1);
         }
+        printf("Calibration completed.\n");
         // Release data processing right.
         pthread_mutex_unlock(&controlLock);
     }

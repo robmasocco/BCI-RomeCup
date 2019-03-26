@@ -11,6 +11,8 @@
 #include "BCI_NeuroRace.h"
 #include "SPI_Definitions.h"
 
+extern pid_t procPID;
+
 pthread_t controllerTID;
 pthread_t workersTIDs[CHANNELS];
 
@@ -64,12 +66,14 @@ void *sampler(void *arg) {
                            fftWorker, (void *)i)) {
             fprintf(stderr, "ERROR: Failed to spawn #%d FFT worker thread.\n",
                     i + 1);
+            kill(procPID, SIGTERM);
             pthread_exit(NULL);
         }
     }
     // Open SPI interface at high frequency and configure it.
     if (!bcm2835_spi_begin()) {
         fprintf(stderr, "ERROR: Failed to open SPI interface.\n");
+        kill(procPID, SIGTERM);
         pthread_exit(NULL);
     }
     bcm2835_spi_setBitOrder(BCM2835_SPI_BIT_ORDER_MSBFIRST);
@@ -78,22 +82,15 @@ void *sampler(void *arg) {
     bcm2835_spi_chipSelect(BCM2835_SPI_CS0);
     bcm2835_spi_setChipSelectPolarity(BCM2835_SPI_CS0, LOW);
     printf("SPI interface opened for sampling.\n");
-    // Spawn FFT workers threads.
-    for (int i = 0; i < CHANNELS; i++) {
-        if (pthread_create(&(workersTIDs[i]), &(fftWorkersData[i]),
-                           fftWorker, (void *)i)) {
-            fprintf(stderr, "ERROR: Failed to spawn #%d FFT worker thread.\n",
-                    i + 1);
-            pthread_exit(NULL);
-        }
-    }
     // Spawn controller thread.
     if (pthread_create(&controllerTID, &controllerData, controller, NULL)) {
         fprintf(stderr, "ERROR: Failed to spawn controller thread.\n");
+        kill(procPID, SIGTERM);
         pthread_exit(NULL);
     }
     // Wait for sampling start signal.
     sem_wait(&startSampling);
+    printf("Sampling started.\n");
     // Start conversions (SOC).
     bcm2835_gpio_write(START, HIGH);
     // Wait for ADCs to settle and ignore first two samples.
@@ -127,6 +124,11 @@ void samplerTermination(void) {
     bcm2835_gpio_write(START, LOW);
     // Close SPI interface.
     bcm2835_spi_end();
+    // Kill FFT worker threads.
+    for (int i = 0; i < CHANNELS; i++)
+        pthread_kill(workersTIDs[i], SIGUSR1);
+    // Kill controller thread.
+    pthread_kill(controllerTID, SIGUSR1);
     // Join with worker threads and destroy FFT data.
     for (int i = 0; i < CHANNELS; i++) {
         pthread_join(workersTIDs[i], NULL);
