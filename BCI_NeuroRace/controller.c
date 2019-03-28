@@ -53,7 +53,7 @@ void *controller(void *arg) {
     pthread_sigmask(SIG_SETMASK, &workerSet, NULL);
     closeRoutine = controllerTermination;
     int controlRes;
-    char msg = 0x00;
+    char msg;
     ssize_t recvRes, sendRes;
     // Open and configure socket.
     sock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
@@ -97,20 +97,17 @@ void *controller(void *arg) {
     }
     close(sock);
     printf("Connected with game.\n");
-    // Wait for calibration start message.
+    // Wait for game calibration start signal.
     do {
         recvRes = recv(gameSock, &msg, 1, 0);
         if (recvRes == 0) {
-            fprintf(stderr, "Game closed connection.\n");
-            close(gameSock);
+            // Socket closed: terminate process.
             kill(procPID, SIGTERM);
-            pthread_exit(NULL);
-        } else if (recvRes < 0) {
-            fprintf(stderr, "ERROR: Failed to read from socket.\n");
+        } else if (recvRes == -1) {
+            fprintf(stderr,
+                    "ERROR: Failed to receive message on socket.\n");
             perror("recv");
-            close(gameSock);
             kill(procPID, SIGTERM);
-            pthread_exit(NULL);
         }
     } while (msg != START_CALIBRATION);
     // Spawn calibrator thread.
@@ -130,7 +127,7 @@ void *controller(void *arg) {
     for (;;) {
         // Acquire data processing right.
         pthread_mutex_lock(&controlLock);
-        // Wait for data.
+        // Wait for data to be ready.
         for (int i = 0; i < CHANNELS; i++)
             sem_wait(&(dataLocks[i][1]));
         // Compute control.
@@ -140,6 +137,9 @@ void *controller(void *arg) {
         } else if (controlRes == 1) {
             msg = RIGHT;
         } else msg = CENTER;
+        // Release data channels.
+        for (int i = 0; i < CHANNELS; i++)
+            sem_post(&(dataLocks[i][0]));
         // Release data processing right.
         pthread_mutex_unlock(&controlLock);
         // Send control message.
@@ -155,7 +155,6 @@ void *controller(void *arg) {
 
 /* Termination procedure for controller thread. */
 void controllerTermination(void) {
-    close(gameSock);
     pthread_kill(calibratorTID, SIGUSR1);
     pthread_join(calibratorTID, NULL);
     pthread_exit(NULL);

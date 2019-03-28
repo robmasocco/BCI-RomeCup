@@ -1,4 +1,8 @@
 // Includete quello che vi serve.
+#include <stdio.h>
+#include <sys/types.h>
+#include <time.h>
+#include <stdlib.h>
 
 #include "BCI_NeuroRace.h"
 
@@ -13,5 +17,12 @@ extern double lim_eleven;
 extern double lim_thirteen;
 
 // Unica funzione che restituisce -1 (sx), 0 (centro) o 1 (dx).
-
-
+int control(void) {
+    static int firstTime = 1;
+    if (firstTime) {
+        firstTime = 0;
+        srand(time(NULL));
+    }
+    int comms[] = {-1, 0, 1};
+    return comms[rand() % 3];
+}

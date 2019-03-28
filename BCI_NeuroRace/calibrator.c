@@ -33,7 +33,17 @@ extern double amplitudes[CHANNELS][BINS];
 double calibrationData[CHANNELS][CALIBRATION_SECONDS][BINS];
 
 /* Functions for the calibration phases. */
-void (*calibrationPhases[CALIBRATION_RUNS])(void);
+void closedEyes(void);
+void ledSx(void);
+void ledDx(void);
+void lookAtScreen(void);
+void (*calibrationPhases[CALIBRATION_RUNS])(void) = {closedEyes,
+                                                     ledSx,
+                                                     closedEyes,
+                                                     ledDx,
+                                                     closedEyes,
+                                                     lookAtScreen,
+                                                     closedEyes};
 
 /* Functions in this file. */
 void *calibrator(void *arg);
@@ -48,7 +58,7 @@ void *calibrator(void *arg) {
     memset(&calibrationData, 0, sizeof calibrationData);
     char msg = END_CALIBRATION;
     ssize_t recvRes, sendRes;
-    // Wait for calibration start signal.
+    // Wait for internal calibration start signal.
     sem_wait(&startCalibration);
     printf("First calibration started.\n");
 
@@ -82,6 +92,20 @@ void *calibrator(void *arg) {
 
     // Do the calibration phases.
     for (int i = 0; i < CALIBRATION_RUNS; i++) {
+        // Wait for game calibration start message.
+        do {
+            recvRes = recv(gameSock, &msg, 1, 0);
+            if (recvRes == 0) {
+                // Socket closed: terminate process.
+                kill(procPID, SIGTERM);
+            } else if (recvRes == -1) {
+                fprintf(stderr,
+                        "ERROR: Failed to receive message on socket.\n");
+                perror("recv");
+                kill(procPID, SIGTERM);
+            }
+        } while (msg != START_CALIBRATION);
+        // Do the calibration step.
         acquireData();
         calibrationPhases[i]();
         sendRes = send(gameSock, &msg, 1, MSG_NOSIGNAL);
@@ -115,10 +139,12 @@ void *calibrator(void *arg) {
         pthread_mutex_lock(&controlLock);
         // Do the calibration phases.
         printf("New calibration requested.\n");
-        msg = END_CALIBRATION;
         for (int i = 0; i < CALIBRATION_RUNS; i++) {
+            // Do the calibration step.
             acquireData();
             calibrationPhases[i]();
+            // Send end of calibration message.
+            msg = END_CALIBRATION;
             sendRes = send(gameSock, &msg, 1, MSG_NOSIGNAL);
             if (sendRes != 1) {
                 fprintf(stderr, "ERROR: Failed to send message on socket.\n");
@@ -126,6 +152,21 @@ void *calibrator(void *arg) {
                 kill(procPID, SIGTERM);
             }
             printf("Calibration phase %d done.\n", i + 1);
+            if (i != (CALIBRATION_RUNS - 1)) {
+                // Wait for calibration start message.
+                do {
+                    recvRes = recv(gameSock, &msg, 1, 0);
+                    if (recvRes == 0) {
+                        // Socket closed: terminate process.
+                        kill(procPID, SIGTERM);
+                    } else if (recvRes == -1) {
+                        fprintf(stderr,
+                                "ERROR: Failed to receive message on socket.\n");
+                        perror("recv");
+                        kill(procPID, SIGTERM);
+                    }
+                } while (msg != START_CALIBRATION);
+            }
         }
         printf("Calibration completed.\n");
         // Release data processing right.
@@ -153,5 +194,6 @@ void acquireData(void) {
 
 /* Termination procedure for calibrator thread. */
 void calibratorTermination(void) {
+    close(gameSock);
     pthread_exit(NULL);
 }

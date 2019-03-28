@@ -16,12 +16,16 @@ extern double calibrationData[CHANNELS][CALIBRATION_SECONDS][BINS];
 // Terza dimensione: frequenze d'interesse, 6 (8, 10, 11, 13, 22, 26 Hz ordinate
 // così).
 
+/*
+ * Fare massimo dei minimi per closedEyes.
+ * In ogni calibrazione, dare più peso agli ultimi campioni.
+ */
 
-void min(double A[][][], int j) {
-	double m;
-	for(int i = 0, i < 2, i++) {
-		for(int t = 0; t < 5; t++) {
-			if(A[i][t][j] < m)
+double min(double A[CHANNELS][CALIBRATION_SECONDS][BINS], int j) {
+	double m = HUGE_VAL;
+	for (int i = 0; i < 2; i++) {
+		for (int t = 0; t < 5; t++) {
+			if (A[i][t][j] < m)
 				m = A[i][t][j];
 		}
 	}
@@ -29,11 +33,11 @@ void min(double A[][][], int j) {
 }
 
 
-void max(double A[][][], int j) {
-	double M;
-	for(int i = 0, i < 2, i++) {
-		for(int t = 0; t < 5; t++) {
-			if(A[i][t][j] > M)
+double max(double A[CHANNELS][CALIBRATION_SECONDS][BINS], int j) {
+	double M = -1;
+	for (int i = 0; i < 2; i++) {
+		for (int t = 0; t < 5; t++) {
+			if (A[i][t][j] > M)
 				M = A[i][t][j];
 		}
 	}
@@ -48,13 +52,13 @@ void closedEyes() {
 
 
 void ledSx() {
-// 11 Hz
+	// 11 Hz
 	lim_eleven = min(calibrationData, 2);
 }
 
 
 void ledDx() {
-// 13 Hz
+	// 13 Hz
 	lim_thirteen = min(calibrationData, 3);
 }
 
