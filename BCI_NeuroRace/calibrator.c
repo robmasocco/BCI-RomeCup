@@ -75,7 +75,8 @@ void *calibrator(void *arg) {
         for (int c = 0; c < CHANNELS; c++)
             sem_post(&(dataLocks[c][0]));
     }
-    sendRes = send(gameSock, &msg, 1, MSG_NOSIGNAL);
+    sendRes = sendto(gameSock, &msg, 1, 0, (struct sockaddr *)&gameAddr,
+                     gameAddrLen);
     if (sendRes != 1) {
         fprintf(stderr, "ERROR: Failed to send message on socket.\n");
         perror("send");
@@ -84,7 +85,8 @@ void *calibrator(void *arg) {
     printf("Filters setup completed.\n");
 #else
     // Jump to phase one.
-    sendRes = send(gameSock, &msg, 1, MSG_NOSIGNAL);
+    sendRes = sendto(gameSock, &msg, 1, 0, (struct sockaddr *)&gameAddr,
+            gameAddrLen);
     if (sendRes != 1) {
         fprintf(stderr, "ERROR: Failed to send message on socket.\n");
         perror("send");
@@ -96,11 +98,9 @@ void *calibrator(void *arg) {
     for (int i = 0; i < CALIBRATION_RUNS; i++) {
         // Wait for game calibration start message.
         do {
-            recvRes = recv(gameSock, &msg, 1, 0);
-            if (recvRes == 0) {
-                // Socket closed: terminate process.
-                kill(procPID, SIGTERM);
-            } else if (recvRes == -1) {
+            recvRes = recvfrom(gameSock, &msg, 1, 0, (struct sockaddr *)
+                    &recvGameAddr, &recvGameAddrLen);
+            if (recvRes != 1) {
                 fprintf(stderr,
                         "ERROR: Failed to receive message on socket.\n");
                 perror("recv");
@@ -110,7 +110,9 @@ void *calibrator(void *arg) {
         // Do the calibration step.
         acquireData();
         calibrationPhases[i]();
-        sendRes = send(gameSock, &msg, 1, MSG_NOSIGNAL);
+        msg = END_CALIBRATION;
+        sendRes = sendto(gameSock, &msg, 1, 0, (struct sockaddr *)&gameAddr,
+                         gameAddrLen);
         if (sendRes != 1) {
             fprintf(stderr, "ERROR: Failed to send message on socket.\n");
             perror("send");
@@ -126,11 +128,9 @@ void *calibrator(void *arg) {
     for (;;) {
         // Wait for calibration start message.
         do {
-            recvRes = recv(gameSock, &msg, 1, 0);
-            if (recvRes == 0) {
-                // Socket closed: terminate process.
-                kill(procPID, SIGTERM);
-            } else if (recvRes == -1) {
+            recvRes = recvfrom(gameSock, &msg, 1, 0, (struct sockaddr *)
+                    &recvGameAddr, &recvGameAddrLen);
+            if (recvRes != 1) {
                 fprintf(stderr,
                         "ERROR: Failed to receive message on socket.\n");
                 perror("recv");
@@ -147,7 +147,8 @@ void *calibrator(void *arg) {
             calibrationPhases[i]();
             // Send end of calibration message.
             msg = END_CALIBRATION;
-            sendRes = send(gameSock, &msg, 1, MSG_NOSIGNAL);
+            sendRes = sendto(gameSock, &msg, 1, 0, (struct sockaddr *)&gameAddr,
+                             gameAddrLen);
             if (sendRes != 1) {
                 fprintf(stderr, "ERROR: Failed to send message on socket.\n");
                 perror("send");
@@ -157,11 +158,9 @@ void *calibrator(void *arg) {
             if (i != (CALIBRATION_RUNS - 1)) {
                 // Wait for calibration start message.
                 do {
-                    recvRes = recv(gameSock, &msg, 1, 0);
-                    if (recvRes == 0) {
-                        // Socket closed: terminate process.
-                        kill(procPID, SIGTERM);
-                    } else if (recvRes == -1) {
+                    recvRes = recvfrom(gameSock, &msg, 1, 0, (struct sockaddr *)
+                            &recvGameAddr, &recvGameAddrLen);
+                    if (recvRes != 1) {
                         fprintf(stderr,
                                 "ERROR: Failed to receive message on socket.\n");
                         perror("recv");

@@ -18,57 +18,57 @@ extern double calibrationData[CHANNELS][CALIBRATION_SECONDS][BINS];
 
 
 double min(double A[CHANNELS][CALIBRATION_SECONDS][BINS], int j) {
-	double m = HUGE_VAL;
-	for (int i = 0; i < 2; i++) {
-		for (int t = 0; t < 5; t++) {
-			if (A[i][t][j] < m)
-				m = A[i][t][j];
-		}
-	}
-	return m;
+    double m = HUGE_VAL;
+    for (int i = 0; i < 2; i++) {
+        for (int t = 0; t < 5; t++) {
+            if (A[i][t][j] < m)
+                m = A[i][t][j];
+        }
+    }
+    return m;
 }
 
 
 double max(double A[CHANNELS][CALIBRATION_SECONDS][BINS], int j) {
-	double M = -1;
-	for (int i = 0; i < 2; i++) {
-		for (int t = 0; t < 5; t++) {
-			if (A[i][t][j] > M)
-				M = A[i][t][j];
-		}
-	}
-	return M;
+    double M = -1;
+    for (int i = 0; i < 2; i++) {
+        for (int t = 0; t < 5; t++) {
+            if (A[i][t][j] > M)
+                M = A[i][t][j];
+        }
+    }
+    return M;
 }
 
 
 void closedEyes() {
-	double a;
-	double b;
-	a = min(calibrationData, 0);
-	b = min(calibrationData, 1);
-	if (a > lim_eight) 
-		lim_eight = a;
-	if (b > lim_ten)
-		lim_ten = b;
+    double a;
+    double b;
+    a = min(calibrationData, 0);
+    b = min(calibrationData, 1);
+    if (a > lim_eight)
+        lim_eight = a;
+    if (b > lim_ten)
+        lim_ten = b;
 }
 
 
 void ledSx() {
-	// 11 Hz
-	lim_eleven = min(calibrationData, 2);
+    // 11 Hz
+    lim_eleven = min(calibrationData, 2);
 }
 
 
 void ledDx() {
-	// 13 Hz
-	lim_thirteen = min(calibrationData, 3);
+    // 13 Hz
+    lim_thirteen = min(calibrationData, 3);
 }
 
 
 void lookAtScreen() {
-	max_eleven = max(calibrationData, 2);
-	max_thirteen = max(calibrationData, 3);
+    max_eleven = max(calibrationData, 2);
+    max_thirteen = max(calibrationData, 3);
 
-	lim_eleven = (lim_eleven + max_eleven)/2.0;
-	lim_thirteen = (lim_thirteen + max_thirteen)/2.0;
+    lim_eleven = (lim_eleven + max_eleven)/2.0;
+    lim_thirteen = (lim_thirteen + max_thirteen)/2.0;
 }

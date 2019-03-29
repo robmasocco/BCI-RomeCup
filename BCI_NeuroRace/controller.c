@@ -61,6 +61,7 @@ void *controller(void *arg) {
     if (setsockopt(gameSock, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof yes)) {
         fprintf(stderr, "ERROR: Failed to configure socket.\n");
         perror("setsockopt");
+        close(gameSock);
         kill(procPID, SIGTERM);
     }
     memset(&sockAddr, 0, sizeof sockAddr);
@@ -72,25 +73,34 @@ void *controller(void *arg) {
     gameAddr.sin_family = AF_INET;
     gameAddr.sin_port = (uint16_t)htons(GAME_PORT);
     inet_pton(AF_INET, GAME_IP, &(gameAddr.sin_addr.s_addr));
+    gameAddrLen = sizeof gameAddr;
     if (bind(gameSock, (struct sockaddr *)&sockAddr, sizeof sockAddr)) {
         fprintf(stderr, "ERROR: Failed to bind socket to Ethernet port.\n");
         perror("bind");
+        close(gameSock);
         kill(procPID, SIGTERM);
     }
     printf("Socket opened.\n");
-    // Connect with game.
-
-    printf("Connected with game.\n");
+    // Wait for game to connect.
+    msg = READY;
+    sendRes = sendto(gameSock, &msg, 1, 0, (struct sockaddr *)&gameAddr,
+            gameAddrLen);
+    if (sendRes != 1) {
+        fprintf(stderr, "ERROR: Failed to send connection message to game.\n");
+        perror("sendto");
+        close(gameSock);
+        kill(procPID, SIGTERM);
+    }
+    printf("Sent handshake message to game.\n");
     // Wait for game calibration start signal.
     do {
-        recvRes = recv(gameSock, &msg, 1, 0);
-        if (recvRes == 0) {
-            // Socket closed: terminate process.
-            kill(procPID, SIGTERM);
-        } else if (recvRes == -1) {
+        recvRes = recvfrom(gameSock, &msg, 1, 0, (struct sockaddr *)
+                &recvGameAddr, &recvGameAddrLen);
+        if (recvRes != 1) {
             fprintf(stderr,
                     "ERROR: Failed to receive message on socket.\n");
             perror("recv");
+            close(gameSock);
             kill(procPID, SIGTERM);
         }
     } while (msg != START_CALIBRATION);
@@ -126,7 +136,8 @@ void *controller(void *arg) {
         // Release data processing right.
         pthread_mutex_unlock(&controlLock);
         // Send control message.
-        sendRes = send(gameSock, &msg, 1, MSG_NOSIGNAL);
+        sendRes = sendto(gameSock, &msg, 1, 0, (struct sockaddr *)&gameAddr,
+                         gameAddrLen);
         if (sendRes != 1) {
             fprintf(stderr, "ERROR: Failed to send message on socket.\n");
             perror("send");
