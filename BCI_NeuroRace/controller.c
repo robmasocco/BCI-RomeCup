@@ -8,15 +8,11 @@
 #include <unistd.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <netinet/tcp.h>
+#include <netinet/udp.h>
 #include <arpa/inet.h>
 
 #include "BCI_NeuroRace.h"
 #include "CommProtocol.h"
-
-#define PI_IP "192.168.2.143"
-#define GAME_PORT 4444
-#define BACKLOG 1
 
 extern pid_t procPID;
 
@@ -30,10 +26,10 @@ extern sem_t startSampling, startCalibration, endCalibration;
 extern pthread_mutex_t controlLock;
 
 /* Socket data. */
-int sock, gameSock;
+int gameSock;
 int yes = 1;
-struct sockaddr_in sockAddr, gameAddr;
-socklen_t gameAddrLen;
+struct sockaddr_in sockAddr, gameAddr, recvGameAddr;
+socklen_t gameAddrLen, recvGameAddrLen;
 
 /* Function to determine input for the game. */
 int control(void);
@@ -56,52 +52,54 @@ void *controller(void *arg) {
     char msg;
     ssize_t recvRes, sendRes;
     // Open and configure socket.
-    sock = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
-    if (sock < 0) {
+    gameSock = socket(AF_INET, SOCK_DGRAM, IPPROTO_UDP);
+    if (gameSock < 0) {
         fprintf(stderr, "ERROR: Failed to open socket.\n");
         perror("socket");
         kill(procPID, SIGTERM);
     }
-    if (setsockopt(sock, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof yes)) {
+    if (setsockopt(gameSock, SOL_SOCKET, SO_REUSEADDR, &yes, sizeof yes)) {
         fprintf(stderr, "ERROR: Failed to configure socket.\n");
         perror("setsockopt");
+        close(gameSock);
         kill(procPID, SIGTERM);
     }
     memset(&sockAddr, 0, sizeof sockAddr);
     memset(&gameAddr, 0, sizeof gameAddr);
     sockAddr.sin_family = AF_INET;
-    sockAddr.sin_port = (uint16_t)htons(GAME_PORT);  // WTF
+    sockAddr.sin_port = (uint16_t)htons(GAME_PORT);
     inet_pton(AF_INET, PI_IP, &(sockAddr.sin_addr.s_addr));
-    if (bind(sock, (struct sockaddr *)&sockAddr, sizeof sockAddr)) {
+    gameAddr.sin_family = AF_INET;
+    gameAddr.sin_port = (uint16_t)htons(GAME_PORT);
+    inet_pton(AF_INET, GAME_IP, &(gameAddr.sin_addr.s_addr));
+    gameAddrLen = sizeof gameAddr;
+    if (bind(gameSock, (struct sockaddr *)&sockAddr, sizeof sockAddr)) {
         fprintf(stderr, "ERROR: Failed to bind socket to Ethernet port.\n");
         perror("bind");
-        kill(procPID, SIGTERM);
-    }
-    if (listen(sock, BACKLOG)) {
-        fprintf(stderr, "ERROR: Failed to set socket as listening.\n");
-        perror("listen");
+        close(gameSock);
         kill(procPID, SIGTERM);
     }
     printf("Socket opened.\n");
     // Wait for game to connect.
-    gameSock = accept(sock, (struct sockaddr *)&gameAddr, &gameAddrLen);
-    if (gameSock < 0) {
-        fprintf(stderr, "ERROR: Failed to accept connection with game.\n");
-        perror("accept");
+    msg = READY;
+    sendRes = sendto(gameSock, &msg, 1, 0, (struct sockaddr *)&gameAddr,
+            gameAddrLen);
+    if (sendRes != 1) {
+        fprintf(stderr, "ERROR: Failed to send connection message to game.\n");
+        perror("sendto");
+        close(gameSock);
         kill(procPID, SIGTERM);
     }
-    close(sock);
-    printf("Connected with game.\n");
+    printf("Sent handshake message to game.\n");
     // Wait for game calibration start signal.
     do {
-        recvRes = recv(gameSock, &msg, 1, 0);
-        if (recvRes == 0) {
-            // Socket closed: terminate process.
-            kill(procPID, SIGTERM);
-        } else if (recvRes == -1) {
+        recvRes = recvfrom(gameSock, &msg, 1, 0, (struct sockaddr *)
+                &recvGameAddr, &recvGameAddrLen);
+        if (recvRes != 1) {
             fprintf(stderr,
                     "ERROR: Failed to receive message on socket.\n");
             perror("recv");
+            close(gameSock);
             kill(procPID, SIGTERM);
         }
     } while (msg != START_CALIBRATION);
@@ -137,7 +135,8 @@ void *controller(void *arg) {
         // Release data processing right.
         pthread_mutex_unlock(&controlLock);
         // Send control message.
-        sendRes = send(gameSock, &msg, 1, MSG_NOSIGNAL);
+        sendRes = sendto(gameSock, &msg, 1, 0, (struct sockaddr *)&gameAddr,
+                         gameAddrLen);
         if (sendRes != 1) {
             fprintf(stderr, "ERROR: Failed to send message on socket.\n");
             perror("send");
