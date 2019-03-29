@@ -27,10 +27,10 @@
 #define PRINTER_CORE 1
 
 /* Sampling parameters. */
-#define FILTER_RUNS 2
-#define NSAMPLES 4000
+#define FILTER_RUNS 1
+#define NSAMPLES 8000
 #define FFTSAMPLES ((NSAMPLES / 2) + 1)
-#define ACQUISITIONS 30
+#define ACQUISITIONS 21
 #define ENOB 19
 #define CHANNELS 2
 #define MAXCHANNELS 8
