@@ -8,7 +8,7 @@
 #include <unistd.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <netinet/tcp.h>
+#include <netinet/udp.h>
 #include <arpa/inet.h>
 
 #include "BCI_NeuroRace.h"
@@ -26,6 +26,8 @@ extern sem_t dataLocks[CHANNELS][2];
 extern pthread_mutex_t controlLock;
 
 extern int gameSock;
+extern struct sockaddr_in gameAddr, recvGameAddr;
+extern socklen_t gameAddrLen, recvGameAddrLen;
 
 extern double amplitudes[CHANNELS][BINS];
 

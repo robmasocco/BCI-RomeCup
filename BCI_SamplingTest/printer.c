@@ -49,12 +49,12 @@ void *printer(void *arg) {
                          "22 Hz: (%lg, %lg) - "
                          "26 Hz: (%lg, %lg)\n",
                          k + 1,
-                         amplitudes[0][8],  amplitudes[1][8],
-                         amplitudes[0][10], amplitudes[1][10],
-                         amplitudes[0][11], amplitudes[1][11],
-                         amplitudes[0][13], amplitudes[1][13],
+                         amplitudes[0][16], amplitudes[1][16],
+                         amplitudes[0][20], amplitudes[1][20],
                          amplitudes[0][22], amplitudes[1][22],
-                         amplitudes[0][26], amplitudes[1][26]);
+                         amplitudes[0][26], amplitudes[1][26],
+                         amplitudes[0][44], amplitudes[1][44],
+                         amplitudes[0][52], amplitudes[1][52]);
         // Release data channels.
         for (int i = 0; i < CHANNELS; i++)
             sem_post(&(printerLocks[i][0]));
