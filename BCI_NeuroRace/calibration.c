@@ -1,8 +1,8 @@
 #include <math.h>
 #include "BCI_NeuroRace.h"
 
-double lim_eight = HUGE_VAL;
-double lim_ten = HUGE_VAL;
+double lim_eight = -1;
+double lim_ten = -1;
 double lim_eleven = HUGE_VAL;
 double lim_thirteen = HUGE_VAL;
 double max_eleven = 0;
@@ -16,10 +16,6 @@ extern double calibrationData[CHANNELS][CALIBRATION_SECONDS][BINS];
 // Terza dimensione: frequenze d'interesse, 6 (8, 10, 11, 13, 22, 26 Hz ordinate
 // così).
 
-/*
- * Fare massimo dei minimi per closedEyes.
- * In ogni calibrazione, dare più peso agli ultimi campioni.
- */
 
 double min(double A[CHANNELS][CALIBRATION_SECONDS][BINS], int j) {
 	double m = HUGE_VAL;
@@ -46,8 +42,14 @@ double max(double A[CHANNELS][CALIBRATION_SECONDS][BINS], int j) {
 
 
 void closedEyes() {
-	lim_eight = min(calibrationData, 0);
-	lim_ten = min(calibrationData, 1);
+	double a;
+	double b;
+	a = min(calibrationData, 0);
+	b = min(calibrationData, 1);
+	if (a > lim_eight) 
+		lim_eight = a;
+	if (b > lim_ten)
+		lim_ten = b;
 }
 
 
