@@ -1,4 +1,3 @@
-// Includete quello che vi serve.
 #include <stdio.h>
 #include <sys/types.h>
 #include <time.h>
@@ -22,12 +21,10 @@ double unifiedCh[BINS];
 
 /*  Fa la media aritmetica tra i due canali dei valori relativi ad ogni frequenza,
 	salvandoli in unifiedCh.  */
-double *mergeChannels(void) {
-
+void mergeChannels(void) {
 	for (int i = 0; i < BINS; i++) {
 		unifiedCh[i] = (amplitudes[0][i] + amplitudes[1][i])/2.0;
 	}
-
 }
 
 
