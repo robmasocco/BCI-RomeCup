@@ -29,12 +29,12 @@
 #define CALIBRATOR_CORE 1
 
 /* Sampling parameters. */
-#define FILTER_RUNS 2
-#define NSAMPLES 4000
+#define FILTER_RUNS 1
+#define NSAMPLES 8000
 #define FFTSAMPLES ((NSAMPLES / 2) + 1)
 #define ENOB 19
 #define CHANNELS 2
 #define MAXCHANNELS 8
 #define BINS 6
 #define CALIBRATION_RUNS 7
-#define CALIBRATION_SECONDS 5
+#define CALIBRATION_SECONDS 3

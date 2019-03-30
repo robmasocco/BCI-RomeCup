@@ -6,7 +6,7 @@
 #include "BCI_NeuroRace.h"
 
 // Array ordinato per canali e frequenze rispettivamente.
-// Contiene le ampiezze a 1 sec.
+// Contiene le ampiezze a 2 sec.
 // Le frequenze sono rispettivamente 8, 10, 11, 13, 22 e 26 Hz (BINS = 6).
 extern double amplitudes[CHANNELS][BINS];
 
@@ -19,8 +19,9 @@ extern double lim_thirteen;
 double unifiedCh[BINS];
 
 
-/*  Fa la media aritmetica tra i due canali dei valori relativi ad ogni frequenza,
-	salvandoli in unifiedCh.  */
+/* Fa la media aritmetica tra i due canali dei valori relativi ad ogni
+ * frequenza, salvandoli in unifiedCh.
+ */
 void mergeChannels(void) {
 	for (int i = 0; i < BINS; i++) {
 		unifiedCh[i] = (amplitudes[0][i] + amplitudes[1][i])/2.0;

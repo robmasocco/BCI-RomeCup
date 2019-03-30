@@ -162,7 +162,8 @@ void *calibrator(void *arg) {
                             &recvGameAddr, &recvGameAddrLen);
                     if (recvRes != 1) {
                         fprintf(stderr,
-                                "ERROR: Failed to receive message on socket.\n");
+                                "ERROR: Failed to receive message on "
+                                "socket.\n");
                         perror("recv");
                         kill(procPID, SIGTERM);
                     }

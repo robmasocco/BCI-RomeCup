@@ -73,7 +73,6 @@ void *controller(void *arg) {
     gameAddr.sin_family = AF_INET;
     gameAddr.sin_port = (uint16_t)htons(GAME_PORT);
     inet_pton(AF_INET, GAME_IP, &(gameAddr.sin_addr.s_addr));
-    gameAddrLen = sizeof gameAddr;
     if (bind(gameSock, (struct sockaddr *)&sockAddr, sizeof sockAddr)) {
         fprintf(stderr, "ERROR: Failed to bind socket to Ethernet port.\n");
         perror("bind");
@@ -81,7 +80,7 @@ void *controller(void *arg) {
         kill(procPID, SIGTERM);
     }
     printf("Socket opened.\n");
-    // Wait for game to connect.
+    // Do the initial handshake with the game.
     msg = READY;
     sendRes = sendto(gameSock, &msg, 1, 0, (struct sockaddr *)&gameAddr,
             gameAddrLen);

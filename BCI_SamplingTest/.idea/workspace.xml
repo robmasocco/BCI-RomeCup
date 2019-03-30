@@ -14,12 +14,10 @@
   <component name="ChangeListManager">
     <list default="true" id="21e37514-058c-4941-a0ed-8c37352f786d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../BCI_NeuroRace/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_NeuroRace/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_NeuroRace/CommProtocol.h" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_NeuroRace/CommProtocol.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_NeuroRace/calibrator.c" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_NeuroRace/calibrator.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../BCI_NeuroRace/controller.c" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_NeuroRace/controller.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BCI_SamplingTest.h" beforeDir="false" afterPath="$PROJECT_DIR$/BCI_SamplingTest.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/printer.c" beforeDir="false" afterPath="$PROJECT_DIR$/printer.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BCI_NeuroRace/BCI_NeuroRace.h" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_NeuroRace/BCI_NeuroRace.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BCI_NeuroRace/calibration.c" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_NeuroRace/calibration.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BCI_NeuroRace/control.c" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_NeuroRace/control.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BCI_NeuroRace/fftWorker.c" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_NeuroRace/fftWorker.c" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/" />
@@ -38,7 +36,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="437">
+                <state relative-caret-position="380">
                   <caret line="19" selection-start-line="19" selection-end-line="19" />
                 </state>
               </provider>
@@ -87,11 +85,7 @@
           </file>
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BCI_SamplingTest.h">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret lean-forward="true" />
-                </state>
-              </provider>
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
@@ -109,7 +103,6 @@
             <entry file="file://$PROJECT_DIR$/printer.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
-                  <caret lean-forward="true" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -121,7 +114,6 @@
             <entry file="file://$PROJECT_DIR$/sampler.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
-                  <caret lean-forward="true" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -156,9 +148,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="1920" />
-    <option name="height" value="1044" />
+  <component name="ProjectFrameBounds" extendedState="4">
+    <option name="width" value="1080" />
+    <option name="height" value="1920" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -219,15 +211,15 @@
       <workItem from="1553470306518" duration="15000" />
       <workItem from="1553867327337" duration="1315000" />
       <workItem from="1553876115279" duration="1068000" />
+      <workItem from="1553908644026" duration="14000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20922000" />
+    <option name="totallyTimeSpent" value="20936000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-8" width="1924" height="1054" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1080" height="1920" extended-state="4" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.2521322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -264,7 +256,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
+        <state relative-caret-position="380">
           <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
@@ -297,23 +289,18 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/BCI_SamplingTest.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/sampler.c">
+    <entry file="file://$PROJECT_DIR$/fftWorker.c">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fftWorker.c">
+    <entry file="file://$PROJECT_DIR$/sampler.c">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
@@ -325,7 +312,6 @@
     <entry file="file://$PROJECT_DIR$/printer.c">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret lean-forward="true" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>

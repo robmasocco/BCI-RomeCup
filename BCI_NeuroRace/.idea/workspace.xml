@@ -13,7 +13,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ed808d6-aa0b-4aa2-8261-bc6122a9e6b6" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BCI_NeuroRace.h" beforeDir="false" afterPath="$PROJECT_DIR$/BCI_NeuroRace.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calibration.c" beforeDir="false" afterPath="$PROJECT_DIR$/calibration.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/calibrator.c" beforeDir="false" afterPath="$PROJECT_DIR$/calibrator.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/control.c" beforeDir="false" afterPath="$PROJECT_DIR$/control.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller.c" beforeDir="false" afterPath="$PROJECT_DIR$/controller.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fftWorker.c" beforeDir="false" afterPath="$PROJECT_DIR$/fftWorker.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BCI_SamplingTest/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BCI_SamplingTest/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug-raspberry-pi/" />
@@ -32,7 +39,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="414">
+                <state relative-caret-position="360">
                   <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
                 </state>
               </provider>
@@ -42,8 +49,10 @@
             <entry file="file://$PROJECT_DIR$/fftWorker.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
+                  <caret lean-forward="true" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
+                    <element signature="e#1622#1749#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -65,7 +74,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/controller.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
@@ -77,13 +86,14 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/calibrator.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
+                  <caret lean-forward="true" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
-                    <element signature="e#2497#2728#0" expanded="true" />
+                    <element signature="e#2649#2926#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -123,40 +133,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/BCI_NeuroRace.h">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="874">
-                  <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
+                <state>
+                  <caret lean-forward="true" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/control.c">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
-                  <folding>
-                    <element signature="e#34#52#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/calibration.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1633">
-                  <caret line="71" selection-start-line="71" selection-end-line="71" />
-                  <folding>
-                    <element signature="e#0#17#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/controller.c">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2714">
-                  <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
+                  <caret lean-forward="true" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -165,10 +152,33 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/signalHandlers.c">
+            <entry file="file://$PROJECT_DIR$/calibration.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="575">
-                  <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
+                <state>
+                  <caret lean-forward="true" />
+                  <folding>
+                    <element signature="e#0#17#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/sampler.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state>
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/controller.c">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2340">
+                  <caret line="117" column="14" selection-start-line="117" selection-start-column="14" selection-end-line="117" selection-end-column="14" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
                   </folding>
@@ -179,7 +189,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/boardInitializer.c">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="138">
+                <state relative-caret-position="120">
                   <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
@@ -194,7 +204,7 @@
                 <state>
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
-                    <element signature="e#2497#2728#0" expanded="true" />
+                    <element signature="e#2649#2926#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -217,6 +227,7 @@
                 <state>
                   <folding>
                     <element signature="e#0#18#0" expanded="true" />
+                    <element signature="e#1622#1749#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -261,23 +272,23 @@
         <option value="$PROJECT_DIR$/signalHandlers.c" />
         <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/sampler.c" />
-        <option value="$PROJECT_DIR$/fftWorker.c" />
-        <option value="$PROJECT_DIR$/BCI_NeuroRace.h" />
-        <option value="$PROJECT_DIR$/calibration.c" />
         <option value="$PROJECT_DIR$/CommProtocol.h" />
-        <option value="$PROJECT_DIR$/calibrator.c" />
         <option value="$PROJECT_DIR$/CommProtocol.h" />
-        <option value="$PROJECT_DIR$/controller.c" />
         <option value="$PROJECT_DIR$/control.c" />
+        <option value="$PROJECT_DIR$/calibration.c" />
+        <option value="$PROJECT_DIR$/BCI_NeuroRace.h" />
+        <option value="$PROJECT_DIR$/fftWorker.c" />
+        <option value="$PROJECT_DIR$/controller.c" />
+        <option value="$PROJECT_DIR$/calibrator.c" />
       </list>
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-2" />
-    <option name="y" value="-8" />
-    <option name="width" value="1924" />
-    <option name="height" value="1054" />
+    <option name="x" value="1080" />
+    <option name="y" value="164" />
+    <option name="width" value="1920" />
+    <option name="height" value="1051" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -337,14 +348,15 @@
       <workItem from="1553877668843" duration="24000" />
       <workItem from="1553877860780" duration="1856000" />
       <workItem from="1553880196768" duration="115000" />
+      <workItem from="1553907489126" duration="1732000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36942000" />
+    <option name="totallyTimeSpent" value="38674000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2" y="-8" width="1924" height="1054" extended-state="6" />
+    <frame x="1080" y="164" width="1920" height="1051" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15224358" />
@@ -362,7 +374,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899022" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32899022" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32795697" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32790446" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3268817" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -456,39 +468,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
+        <state relative-caret-position="360">
           <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/filtering.c">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sampler.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BitConversion.c">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/calibration.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1633">
-          <caret line="71" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/signalHandlers.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
+        <state relative-caret-position="500">
           <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
@@ -498,27 +488,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/boardInitializer.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BCI_NeuroRace.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="38" column="26" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/calibrator.c">
-      <provider selected="true" editor-type-id="text-editor">
         <state>
           <folding>
             <element signature="e#0#18#0" expanded="true" />
-            <element signature="e#2497#2728#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -532,33 +504,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/fftWorker.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CommProtocol.h">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller.c">
+    <entry file="file://$PROJECT_DIR$/calibration.c">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2714">
-          <caret line="118" column="14" selection-start-line="118" selection-start-column="14" selection-end-line="118" selection-end-column="14" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
-            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#0#17#0" expanded="true" />
           </folding>
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/filtering.c">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/control.c">
       <provider selected="true" editor-type-id="text-editor">
         <state>
+          <caret lean-forward="true" />
           <folding>
-            <element signature="e#34#52#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fftWorker.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#1622#1749#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BCI_NeuroRace.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sampler.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/calibrator.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+            <element signature="e#2649#2926#0" expanded="true" />
           </folding>
         </state>
       </provider>

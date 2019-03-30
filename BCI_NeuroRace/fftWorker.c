@@ -83,22 +83,22 @@ void *fftWorker(void *index) {
         sem_wait(&(dataLocks[chanIndex][0]));
         // Compute normalized amplitude spectrum for this channel.
         // 8 Hz.
-        amplitudes[chanIndex][0] = cabs(fftValues[chanIndex][8]) /
+        amplitudes[chanIndex][0] = cabs(fftValues[chanIndex][16]) /
                                    (double)NSAMPLES;
         // 10 Hz.
-        amplitudes[chanIndex][1] = cabs(fftValues[chanIndex][10]) /
+        amplitudes[chanIndex][1] = cabs(fftValues[chanIndex][20]) /
                                    (double)NSAMPLES;
         // 11 Hz.
-        amplitudes[chanIndex][2] = cabs(fftValues[chanIndex][11]) /
+        amplitudes[chanIndex][2] = cabs(fftValues[chanIndex][22]) /
                                    (double)NSAMPLES;
         // 13 Hz.
-        amplitudes[chanIndex][3] = cabs(fftValues[chanIndex][13]) /
+        amplitudes[chanIndex][3] = cabs(fftValues[chanIndex][26]) /
                                    (double)NSAMPLES;
         // 22 Hz.
-        amplitudes[chanIndex][4] = cabs(fftValues[chanIndex][22]) /
+        amplitudes[chanIndex][4] = cabs(fftValues[chanIndex][44]) /
                                    (double)NSAMPLES;
         // 26 Hz.
-        amplitudes[chanIndex][5] = cabs(fftValues[chanIndex][26]) /
+        amplitudes[chanIndex][5] = cabs(fftValues[chanIndex][52]) /
                                    (double)NSAMPLES;
         // Notify whoever needs the data.
         sem_post(&(dataLocks[chanIndex][1]));

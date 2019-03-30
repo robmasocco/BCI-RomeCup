@@ -19,8 +19,8 @@ extern double calibrationData[CHANNELS][CALIBRATION_SECONDS][BINS];
 
 double min(double A[CHANNELS][CALIBRATION_SECONDS][BINS], int j) {
     double m = HUGE_VAL;
-    for (int i = 0; i < 2; i++) {
-        for (int t = 0; t < 5; t++) {
+    for (int i = 0; i < CHANNELS; i++) {
+        for (int t = 0; t < CALIBRATION_SECONDS; t++) {
             if (A[i][t][j] < m)
                 m = A[i][t][j];
         }
@@ -31,8 +31,8 @@ double min(double A[CHANNELS][CALIBRATION_SECONDS][BINS], int j) {
 
 double max(double A[CHANNELS][CALIBRATION_SECONDS][BINS], int j) {
     double M = -1;
-    for (int i = 0; i < 2; i++) {
-        for (int t = 0; t < 5; t++) {
+    for (int i = 0; i < CHANNELS; i++) {
+        for (int t = 0; t < CALIBRATION_SECONDS; t++) {
             if (A[i][t][j] > M)
                 M = A[i][t][j];
         }
