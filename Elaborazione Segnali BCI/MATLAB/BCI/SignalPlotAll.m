@@ -1,119 +1,129 @@
 % ===== 3D plot =====
-fig = figure(5);
+if plotGraphics <= 0
+    fig = figure(5);
+    
+    ax_s_sx = subplot(2,2,1);
+    title('Samples SX 3D');
+    hold on;
+    for i = start_fft:final_fft  
+        times = ((i - 1) * step_N + 1) : ((i - 1) * step_N + N);
+        if plotSignals <= 0
+            plot3(t, t_seq(1, times), s_sx(i,:), 'Color', [0 0.4470 0.7410]);
+        end
+        if plotSignals >= 0
+            plot3(t, t_seq(1, times), s_f_sx(i,:), 'Color', [0.8500 0.3250 0.0980]); 
+        end
+    end
+    if plotSignals == 0
+        legend("Segnale originale", "Segnale filtrato");
+    elseif plotSignals <= -1
+        legend("Segnale originale");
+    elseif plotSignals >= 1
+        legend("Segnale filtrato");
+    end
+    xlabel('Samples Time (s)');
+    ylabel('Time (s)');
+    zlabel('Magnitude');
+    view([0,-1,0]);
+    grid on;
 
-ax_s_sx = subplot(2,2,1);
-title('Samples SX 3D');
-hold on;
-for i = 1:n_fft 
-    if plotMode <= 0
-        plot3(t, t_seq(1, ((i-1)*N+1):(i*N)), s_sx(i,:), 'Color', [0 0.4470 0.7410]);
+    ax_s_dx = subplot(2,2,2);
+    title('Samples DX 3D');
+    hold on;
+    for i = start_fft:final_fft  
+        times = ((i - 1) * step_N + 1) : ((i - 1) * step_N + N);
+        if plotSignals <= 0
+            plot3(t, t_seq(1, times), s_dx(i,:), 'Color', [0 0.4470 0.7410]);
+        end
+        if plotSignals >= 0
+            plot3(t, t_seq(1, times), s_f_dx(i,:), 'Color', [0.8500 0.3250 0.0980]);
+        end
     end
-    if plotMode >= 0
-        plot3(t, t_seq(1, ((i-1)*N+1):(i*N)), s_f_sx(i,:), 'Color', [0.8500 0.3250 0.0980]); 
+    if plotSignals == 0
+        legend("Segnale originale", "Segnale filtrato");
+    elseif plotSignals <= -1
+        legend("Segnale originale");
+    elseif plotSignals >= 1
+        legend("Segnale filtrato");
     end
-end
-if plotMode == 0
-    legend("Segnale originale", "Segnale filtrato");
-elseif plotMode <= -1
-    legend("Segnale originale");
-elseif plotMode >= 1
-    legend("Segnale filtrato");
-end
-xlabel('Samples Time (s)');
-ylabel('Time (s)');
-zlabel('Magnitude');
-view([0,-1,0]);
-grid on;
-
-ax_s_dx = subplot(2,2,2);
-title('Samples DX 3D');
-hold on;
-for i = 1:n_fft 
-    if plotMode <= 0
-        plot3(t, t_seq(1, ((i-1)*N+1):(i*N)), s_dx(i,:), 'Color', [0 0.4470 0.7410]);
-    end
-    if plotMode >= 0
-        plot3(t, t_seq(1, ((i-1)*N+1):(i*N)), s_f_dx(i,:), 'Color', [0.8500 0.3250 0.0980]);
-    end
-end
-if plotMode == 0
-    legend("Segnale originale", "Segnale filtrato");
-elseif plotMode <= -1
-    legend("Segnale originale");
-elseif plotMode >= 1
-    legend("Segnale filtrato");
-end
-xlabel('Samples Time (s)');
-ylabel('Time (s)');
-zlabel('Magnitude');
-view([0,-1,0]);
-grid on;
+    xlabel('Samples Time (s)');
+    ylabel('Time (s)');
+    zlabel('Magnitude');
+    view([0,-1,0]);
+    grid on;
 
 
-ax_S_sx = subplot(2,2,3);
-title('Spectrum SX 3D');
-hold on;
-for i = 1:n_fft 
-    if plotMode <= 0
-        plot3(f, sec * i * ones(1, N/2), S_sx(i,:), 'Color', [0 0.4470 0.7410]);
+    ax_S_sx = subplot(2,2,3);
+    title('Spectrum SX 3D');
+    hold on;
+    for i = start_fft:final_fft  
+        time = ((i - 1) * step_t + sec) * ones(1, N/2);
+        if plotSignals <= 0
+            plot3(f, time, S_sx(i,:), 'Color', [0 0.4470 0.7410]);
+        end
+        if plotSignals >= 0
+            plot3(f, time, S_f_sx(i,:), 'Color', [0.8500 0.3250 0.0980]); 
+        end
     end
-    if plotMode >= 0
-        plot3(f, sec * i * ones(1, N/2), S_f_sx(i,:), 'Color', [0.8500 0.3250 0.0980]); 
+    if plotSignals == 0
+        legend("Segnale originale", "Segnale filtrato");
+    elseif plotSignals <= -1
+        legend("Segnale originale");
+    elseif plotSignals >= 1
+        legend("Segnale filtrato");
     end
-end
-if plotMode == 0
-    legend("Segnale originale", "Segnale filtrato");
-elseif plotMode <= -1
-    legend("Segnale originale");
-elseif plotMode >= 1
-    legend("Segnale filtrato");
-end
-xlabel('Frequency (hz)');
-ylabel('Time (s)');
-zlabel('Magnitude');
-axis([5 45 0 n_fft*sec 0 a]);
-view([0,-1,0]);
-grid on;
+    xlabel('Frequency (hz)');
+    ylabel('Time (s)');
+    zlabel('Magnitude');
+    axis([f1 f2 start_fft*step_t final_fft*step_t 0 a]);
+    view([0,-1,0]);
+    grid on;
 
-ax_S_dx = subplot(2,2,4);
-title('Spectrum DX 3D');
-hold on;
-for i = 1:n_fft 
-    if plotMode <= 0
-        plot3(f, sec * i * ones(1, N/2), S_dx(i,:), 'Color', [0 0.4470 0.7410]);
+    ax_S_dx = subplot(2,2,4);
+    title('Spectrum DX 3D');
+    hold on;
+    for i = start_fft:final_fft 
+        time = ((i - 1) * step_t + sec) * ones(1, N/2);
+        if plotSignals <= 0
+            plot3(f, time, S_dx(i,:), 'Color', [0 0.4470 0.7410]);
+        end
+        if plotSignals >= 0
+            plot3(f, time, S_f_dx(i,:), 'Color', [0.8500 0.3250 0.0980]);
+        end
     end
-    if plotMode >= 0
-        plot3(f, sec * i * ones(1, N/2), S_f_dx(i,:), 'Color', [0.8500 0.3250 0.0980]);
+    if plotSignals == 0
+        legend("Segnale originale", "Segnale filtrato");
+    elseif plotSignals <= -1
+        legend("Segnale originale");
+    elseif plotSignals >= 1
+        legend("Segnale filtrato");
     end
-end
-if plotMode == 0
-    legend("Segnale originale", "Segnale filtrato");
-elseif plotMode <= -1
-    legend("Segnale originale");
-elseif plotMode >= 1
-    legend("Segnale filtrato");
-end
-xlabel('Frequency (hz)');
-ylabel('Time (s)');
-zlabel('Magnitude');
-axis([f1 f2 0 n_fft*sec 0 a]);
-view([0,-1,0]);
-grid on;
+    xlabel('Frequency (hz)');
+    ylabel('Time (s)');
+    zlabel('Magnitude');
+    axis([f1 f2 start_fft*step_t final_fft*step_t 0 a]);
+    view([0,-1,0]);
+    grid on;
 
-Link1 = linkprop([ax_s_sx, ax_s_dx], {'CameraUpVector', 'CameraPosition', 'CameraTarget', 'XLim', 'YLim', 'ZLim'});
-setappdata(fig, 'Link1', Link1);
-Link2 = linkprop([ax_S_sx, ax_S_dx], {'CameraUpVector', 'CameraPosition', 'CameraTarget', 'XLim', 'YLim', 'ZLim'});
-setappdata(fig, 'Link1', Link2);
+    Link1 = linkprop([ax_s_sx, ax_s_dx], {'CameraUpVector', 'CameraPosition', 'CameraTarget', 'XLim', 'YLim', 'ZLim'});
+    setappdata(fig, 'Link1', Link1);
+    Link2 = linkprop([ax_S_sx, ax_S_dx], {'CameraUpVector', 'CameraPosition', 'CameraTarget', 'XLim', 'YLim', 'ZLim'});
+    setappdata(fig, 'Link1', Link2);
+end
+
+
 
 % ===== 2D plot =====
-if plotBlocks == 1
+if plotGraphics >= 0
     pause;
     
-    for i = 1:n_fft
+    for i = start_fft:final_fft 
         figure(6);
-
+        
+        start_t = (i-1) * step_t;
+        final_t = start_t + sec;
         ax_s_sx = subplot(2,2,1);
-        title("Samples SX in [" + num2str((i-1) * sec) + " , " + num2str(i * sec) + "] s");
+        title("Samples SX in [" + num2str(start_t) + " , " + num2str(final_t) + "] s");
         hold on;
         if plotMode <= 0
             plot(t, s_sx(i,:), 'Color', [0 0.4470 0.7410]);
@@ -133,7 +143,7 @@ if plotBlocks == 1
         grid on;
 
         ax_s_dx = subplot(2,2,2);
-        title("Samples DX in [" + num2str((i-1) * sec) + " , " + num2str(i * sec) + "] s");
+        title("Samples DX in [" + num2str(start_t) + " , " + num2str(final_t) + "] s");
         hold on;
         if plotMode <= 0
             plot(t, s_dx(i,:), 'Color', [0 0.4470 0.7410]);
@@ -156,7 +166,7 @@ if plotBlocks == 1
         
         
         ax_S_sx = subplot(2,2,3);
-        title("Spectrum SX in [" + num2str((i-1) * sec) + " , " + num2str(i * sec) + "] s");
+        title("Spectrum SX in [" + num2str(start_t) + " , " + num2str(final_t) + "] s");
         hold on;
         if plotMode <= 0
             plot(f, S_sx(i,:), 'Color', [0 0.4470 0.7410]);
@@ -177,7 +187,7 @@ if plotBlocks == 1
         grid on;
 
         ax_S_dx = subplot(2,2,4);
-        title("Spectrum DX in [" + num2str((i-1) * sec) + " , " + num2str(i * sec) + "] s");
+        title("Spectrum DX in [" + num2str(start_t) + " , " + num2str(final_t) + "] s");
         hold on;
         if plotMode <= 0
             plot(f, S_dx(i,:), 'Color', [0 0.4470 0.7410]);
