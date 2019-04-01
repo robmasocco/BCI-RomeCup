@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroSerial/BCI_NeuroSerial.h
+
+/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroSerial/control.c
+stdio.h
+-
+sys/types.h
+-
+time.h
+-
+stdlib.h
+-
+BCI_NeuroSerial.h
+/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroSerial/BCI_NeuroSerial.h
+
