@@ -60,145 +60,145 @@ include CMakeFiles/BCI_NeuroRace.dir/flags.make
 CMakeFiles/BCI_NeuroRace.dir/main.c.o: CMakeFiles/BCI_NeuroRace.dir/flags.make
 CMakeFiles/BCI_NeuroRace.dir/main.c.o: ../main.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/BCI_NeuroRace.dir/main.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/main.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/main.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/main.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/main.c
 
 CMakeFiles/BCI_NeuroRace.dir/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_NeuroRace.dir/main.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/main.c > CMakeFiles/BCI_NeuroRace.dir/main.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/main.c > CMakeFiles/BCI_NeuroRace.dir/main.c.i
 
 CMakeFiles/BCI_NeuroRace.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_NeuroRace.dir/main.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/main.c -o CMakeFiles/BCI_NeuroRace.dir/main.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/main.c -o CMakeFiles/BCI_NeuroRace.dir/main.c.s
 
 CMakeFiles/BCI_NeuroRace.dir/filtering.c.o: CMakeFiles/BCI_NeuroRace.dir/flags.make
 CMakeFiles/BCI_NeuroRace.dir/filtering.c.o: ../filtering.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/BCI_NeuroRace.dir/filtering.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/filtering.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/filtering.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/filtering.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/filtering.c
 
 CMakeFiles/BCI_NeuroRace.dir/filtering.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_NeuroRace.dir/filtering.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/filtering.c > CMakeFiles/BCI_NeuroRace.dir/filtering.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/filtering.c > CMakeFiles/BCI_NeuroRace.dir/filtering.c.i
 
 CMakeFiles/BCI_NeuroRace.dir/filtering.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_NeuroRace.dir/filtering.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/filtering.c -o CMakeFiles/BCI_NeuroRace.dir/filtering.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/filtering.c -o CMakeFiles/BCI_NeuroRace.dir/filtering.c.s
 
 CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.o: CMakeFiles/BCI_NeuroRace.dir/flags.make
 CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.o: ../boardInitializer.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/boardInitializer.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/boardInitializer.c
 
 CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/boardInitializer.c > CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/boardInitializer.c > CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.i
 
 CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/boardInitializer.c -o CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/boardInitializer.c -o CMakeFiles/BCI_NeuroRace.dir/boardInitializer.c.s
 
 CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.o: CMakeFiles/BCI_NeuroRace.dir/flags.make
 CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.o: ../BitConversion.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/BitConversion.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/BitConversion.c
 
 CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/BitConversion.c > CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/BitConversion.c > CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.i
 
 CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/BitConversion.c -o CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/BitConversion.c -o CMakeFiles/BCI_NeuroRace.dir/BitConversion.c.s
 
 CMakeFiles/BCI_NeuroRace.dir/calibrator.c.o: CMakeFiles/BCI_NeuroRace.dir/flags.make
 CMakeFiles/BCI_NeuroRace.dir/calibrator.c.o: ../calibrator.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/BCI_NeuroRace.dir/calibrator.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/calibrator.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibrator.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/calibrator.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibrator.c
 
 CMakeFiles/BCI_NeuroRace.dir/calibrator.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_NeuroRace.dir/calibrator.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibrator.c > CMakeFiles/BCI_NeuroRace.dir/calibrator.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibrator.c > CMakeFiles/BCI_NeuroRace.dir/calibrator.c.i
 
 CMakeFiles/BCI_NeuroRace.dir/calibrator.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_NeuroRace.dir/calibrator.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibrator.c -o CMakeFiles/BCI_NeuroRace.dir/calibrator.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibrator.c -o CMakeFiles/BCI_NeuroRace.dir/calibrator.c.s
 
 CMakeFiles/BCI_NeuroRace.dir/sampler.c.o: CMakeFiles/BCI_NeuroRace.dir/flags.make
 CMakeFiles/BCI_NeuroRace.dir/sampler.c.o: ../sampler.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/BCI_NeuroRace.dir/sampler.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/sampler.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/sampler.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/sampler.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/sampler.c
 
 CMakeFiles/BCI_NeuroRace.dir/sampler.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_NeuroRace.dir/sampler.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/sampler.c > CMakeFiles/BCI_NeuroRace.dir/sampler.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/sampler.c > CMakeFiles/BCI_NeuroRace.dir/sampler.c.i
 
 CMakeFiles/BCI_NeuroRace.dir/sampler.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_NeuroRace.dir/sampler.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/sampler.c -o CMakeFiles/BCI_NeuroRace.dir/sampler.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/sampler.c -o CMakeFiles/BCI_NeuroRace.dir/sampler.c.s
 
 CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.o: CMakeFiles/BCI_NeuroRace.dir/flags.make
 CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.o: ../fftWorker.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/fftWorker.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/fftWorker.c
 
 CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/fftWorker.c > CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/fftWorker.c > CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.i
 
 CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/fftWorker.c -o CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/fftWorker.c -o CMakeFiles/BCI_NeuroRace.dir/fftWorker.c.s
 
 CMakeFiles/BCI_NeuroRace.dir/controller.c.o: CMakeFiles/BCI_NeuroRace.dir/flags.make
 CMakeFiles/BCI_NeuroRace.dir/controller.c.o: ../controller.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/BCI_NeuroRace.dir/controller.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/controller.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/controller.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/controller.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/controller.c
 
 CMakeFiles/BCI_NeuroRace.dir/controller.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_NeuroRace.dir/controller.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/controller.c > CMakeFiles/BCI_NeuroRace.dir/controller.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/controller.c > CMakeFiles/BCI_NeuroRace.dir/controller.c.i
 
 CMakeFiles/BCI_NeuroRace.dir/controller.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_NeuroRace.dir/controller.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/controller.c -o CMakeFiles/BCI_NeuroRace.dir/controller.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/controller.c -o CMakeFiles/BCI_NeuroRace.dir/controller.c.s
 
 CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.o: CMakeFiles/BCI_NeuroRace.dir/flags.make
 CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.o: ../signalHandlers.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/signalHandlers.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/signalHandlers.c
 
 CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/signalHandlers.c > CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/signalHandlers.c > CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.i
 
 CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/signalHandlers.c -o CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/signalHandlers.c -o CMakeFiles/BCI_NeuroRace.dir/signalHandlers.c.s
 
 CMakeFiles/BCI_NeuroRace.dir/calibration.c.o: CMakeFiles/BCI_NeuroRace.dir/flags.make
 CMakeFiles/BCI_NeuroRace.dir/calibration.c.o: ../calibration.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/BCI_NeuroRace.dir/calibration.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/calibration.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibration.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/calibration.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibration.c
 
 CMakeFiles/BCI_NeuroRace.dir/calibration.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_NeuroRace.dir/calibration.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibration.c > CMakeFiles/BCI_NeuroRace.dir/calibration.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibration.c > CMakeFiles/BCI_NeuroRace.dir/calibration.c.i
 
 CMakeFiles/BCI_NeuroRace.dir/calibration.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_NeuroRace.dir/calibration.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibration.c -o CMakeFiles/BCI_NeuroRace.dir/calibration.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/calibration.c -o CMakeFiles/BCI_NeuroRace.dir/calibration.c.s
 
 CMakeFiles/BCI_NeuroRace.dir/control.c.o: CMakeFiles/BCI_NeuroRace.dir/flags.make
 CMakeFiles/BCI_NeuroRace.dir/control.c.o: ../control.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/cmake-build-release-raspberry-pi/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/BCI_NeuroRace.dir/control.c.o"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/control.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/control.c
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/BCI_NeuroRace.dir/control.c.o   -c /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/control.c
 
 CMakeFiles/BCI_NeuroRace.dir/control.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/BCI_NeuroRace.dir/control.c.i"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/control.c > CMakeFiles/BCI_NeuroRace.dir/control.c.i
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/control.c > CMakeFiles/BCI_NeuroRace.dir/control.c.i
 
 CMakeFiles/BCI_NeuroRace.dir/control.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/BCI_NeuroRace.dir/control.c.s"
-	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc-4.8.3 $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/control.c -o CMakeFiles/BCI_NeuroRace.dir/control.c.s
+	/home/lhrobs/raspberrypi/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/arm-linux-gnueabihf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/lhrobs/Documents/GitHub/BCI-RomeCup/BCI_NeuroRace/control.c -o CMakeFiles/BCI_NeuroRace.dir/control.c.s
 
 # Object files for target BCI_NeuroRace
 BCI_NeuroRace_OBJECTS = \

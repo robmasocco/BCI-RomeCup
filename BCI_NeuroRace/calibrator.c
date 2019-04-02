@@ -141,6 +141,27 @@ void *calibrator(void *arg) {
         pthread_mutex_lock(&controlLock);
         // Do the calibration phases.
         printf("New calibration requested.\n");
+        // Jump filter initialization phase.
+        msg = END_CALIBRATION;
+        sendRes = sendto(gameSock, &msg, 1, 0, (struct sockaddr *)&gameAddr,
+                         gameAddrLen);
+        if (sendRes != 1) {
+            fprintf(stderr, "ERROR: Failed to send message on socket.\n");
+            perror("send");
+            kill(procPID, SIGTERM);
+        }
+        // Wait for calibration start message.
+        do {
+            recvRes = recvfrom(gameSock, &msg, 1, 0, (struct sockaddr *)
+                    &recvGameAddr, &recvGameAddrLen);
+            if (recvRes != 1) {
+                fprintf(stderr,
+                        "ERROR: Failed to receive message on "
+                        "socket.\n");
+                perror("recv");
+                kill(procPID, SIGTERM);
+            }
+        } while (msg != START_CALIBRATION);
         for (int i = 0; i < CALIBRATION_RUNS; i++) {
             // Do the calibration step.
             acquireData();

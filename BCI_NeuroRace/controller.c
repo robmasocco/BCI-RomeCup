@@ -81,6 +81,18 @@ void *controller(void *arg) {
     }
     printf("Socket opened.\n");
     // Do the initial handshake with the game.
+    printf("Waiting for handshake message from game.\n");
+    do {
+        recvRes = recvfrom(gameSock, &msg, 1, 0, (struct sockaddr *)
+                &recvGameAddr, &recvGameAddrLen);
+        if (recvRes != 1) {
+            fprintf(stderr,
+                    "ERROR: Failed to receive message on socket.\n");
+            perror("recv");
+            close(gameSock);
+            kill(procPID, SIGTERM);
+        }
+    } while (msg != READY);
     msg = READY;
     sendRes = sendto(gameSock, &msg, 1, 0, (struct sockaddr *)&gameAddr,
             gameAddrLen);

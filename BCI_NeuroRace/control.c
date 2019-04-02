@@ -3,7 +3,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#include "BCI_NeuroSerial.h"
+#include "BCI_NeuroRace.h"
 
 extern double amplitudes[CHANNELS][BINS];
 

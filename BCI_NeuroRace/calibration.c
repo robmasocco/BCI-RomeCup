@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <math.h>
-#include "BCI_NeuroSerial.h"
+#include "BCI_NeuroRace.h"
 
 //double lim_eight = -1;
 double lim_ten = -1;
